@@ -11,21 +11,21 @@
 	* **J**
 	
 	
-![Formato das instruções para cada um dos 6 tipos]()
+![Formato das instruções para cada um dos 6 tipos](https://github.com/DayaneCordeiro/RISC-V_Core/blob/master/Imagens/Formato%20das%20instru%C3%A7%C3%B5es%20RISC%20V.png)
 
 
 * Para essa ISA, existe um total de 47 instruções gerais, podendo-se reduzir a 38 (removendo-se algumas instruções como FENCE, ECALL, EBREAK e as instruções CSRxx)
 * Além das instruções da ISA, exitem extensões de multiplicação e divisão (M) e operações atômicas (A)
-	* **Tipo M (Formato R)**
+* **Tipo M (Formato R)**
 
 
-![Instruções do tipo M]()
+![Instruções do tipo M](https://github.com/DayaneCordeiro/RISC-V_Core/blob/master/Imagens/Tipo%20M.png)
 
 
-	* **Tipo A (Formato R)**
+* **Tipo A (Formato R)**
 	
 	
-![Isntruções do Tipo A]()
+![Isntruções do Tipo A](https://github.com/DayaneCordeiro/RISC-V_Core/blob/master/Imagens/Tipo%20A.png)
 
 ### Registradores
 
