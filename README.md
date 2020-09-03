@@ -16,6 +16,7 @@
 
 * Para essa ISA, existe um total de 47 instruções gerais, podendo-se reduzir a 38 (removendo-se algumas instruções como FENCE, ECALL, EBREAK e as instruções CSRxx)
 * Além das instruções da ISA, exitem extensões de multiplicação e divisão (M) e operações atômicas (A)
+
 * **Tipo M (Formato R)**
 
 
