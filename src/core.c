@@ -60,7 +60,12 @@ void advances_pc(uint32_t offset) {
  * @brief Fetches an instruction on memory.
  */
 uint32_t do_fetch(void) {
-	/* TO DO */
+	uint32_t instruction;
+
+	instruction = icache_read(pc);
+	advances_pc(4);
+
+	return instruction;
 }
 
 /**
