@@ -31,7 +31,8 @@ Na ISO RV32I, A divisão entre os bits para atender aos seis tipos de instruçã
 * IMEDDIATE S/B-TYPE 2		0x00000f80 <- pode ser tratado com o código do RD
 * IMMEDIATE U/J-TYPE		0xfffef000
 
-![Representação dos bits de cada divisão essencial da instrução]()
+
+![Representação dos bits de cada divisão essencial da instrução](https://github.com/DayaneCordeiro/RISC-V/blob/master/Imagens/Representa%C3%A7%C3%A3o%20dos%20bits%20das%20instru%C3%A7%C3%B5es.png)
 
 
 * **Tipo A (Formato R)**
