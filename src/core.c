@@ -43,11 +43,17 @@ SOFTWARE.
 #define VMACHINE_INSTRUCTION_SHIFT_IMMEDIATE_I_TYPE	0x14
 #define VMACHINE_INSTRUCTION_SHIFT_IMMEDIATE		0x0c
 
+#define NUMBER_OF_REGISTERS 0X20
+
+/* Global variables */
+uint32_t pc = 0x00;
+uint32_t registers[NUMBER_OF_REGISTERS];
+
 /**
  * @brief Advances PC Value
  */
 void advances_pc(uint32_t offset) {
-	/* TO DO */
+	pc += offset;
 }
 
 /**
