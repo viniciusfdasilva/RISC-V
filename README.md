@@ -3,12 +3,7 @@
 
 ### Instruções
 * Seis tipos de instruções na **ISA RV32I**:
-	* **R**
-	* **I**
-	* **S**
-	* **B**
-	* **U**
-	* **J**
+	* **R** | **I** | **S** | **B** | **U** | **J**
 	
 	
 ![Formato das instruções para cada um dos 6 tipos](https://github.com/DayaneCordeiro/RISC-V_Core/blob/master/Imagens/Formato%20das%20instru%C3%A7%C3%B5es%20RISC%20V.png)
@@ -21,6 +16,22 @@
 
 
 ![Instruções do tipo M](https://github.com/DayaneCordeiro/RISC-V_Core/blob/master/Imagens/Tipo%20M.png)
+
+
+#### Divisão dos bits nas instruções
+Na ISO RV32I, A divisão entre os bits para atender aos seis tipos de instrução é:
+* FUNCT 7			0xfe000000
+* RS 1				0x000f8000
+* RS 2				0x01f00000
+* FUNCT 3			0x00007000
+* RD				0x00000f80
+* OPCODE			0x0000007f
+* IMMEDIATE I-TYPE		0xfff00000
+* IMEDDIATE S/B-TYPE 1		0xfe000000 <- pode ser tratado com o código do FUNCT 7
+* IMEDDIATE S/B-TYPE 2		0x00000f80 <- pode ser tratado com o código do RD
+* IMMEDIATE U/J-TYPE		0xfffef000
+
+![Representação dos bits de cada divisão essencial da instrução]()
 
 
 * **Tipo A (Formato R)**
