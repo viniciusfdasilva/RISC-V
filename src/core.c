@@ -72,7 +72,40 @@ uint32_t do_fetch(void) {
  * @brief Defines the instruction's type
  */
 char instruction_type(uint32_t opcode) {
-  	/* TO DO */
+  	/* DOING */
+	switch(opcode) {
+		case 0x37:
+		case 0x17:
+			return 'U';
+		break;
+
+		case 0x6f:
+			return 'J';
+		break;
+
+		case 0x67:
+		case 0x03:
+		case 0x13:
+		case 0x0f:
+		case 0x73:
+			return 'I';
+		break;
+
+		case 0x63:
+			return 'B';
+		break;
+
+		case 0x23:
+			return 'S';
+		break;
+
+		case 0x33:
+			return 'R';
+		break;
+
+		default:
+			/* TO DO */
+	}
 }
 
 /**
