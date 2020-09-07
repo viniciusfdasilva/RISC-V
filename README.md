@@ -3,8 +3,10 @@
 
 ### Instruções
 * Seis tipos de instruções na **ISA RV32I**:
-	* **R** | **I** | **S** | **B** | **U** | **J**
-	
+
+**R** | **I** | **S** | **B** | **U** | **J**
+:------: | :------: | :------: | :------: | :------: | :------: |
+Operações com registradores | Valores imediatos short e loads  | Stores | Desvios condicionais | Imediatos longos | Saltos Incondicionais
 	
 ![Formato das instruções para cada um dos 6 tipos](https://github.com/DayaneCordeiro/RISC-V_Core/blob/master/Imagens/Formato%20das%20instru%C3%A7%C3%B5es%20RISC%20V.png)
 
@@ -16,6 +18,10 @@
 
 
 ![Instruções do tipo M](https://github.com/DayaneCordeiro/RISC-V_Core/blob/master/Imagens/Tipo%20M.png)
+
+
+* As 47 Instruções de propósito geral da ISA RV32I
+![Tabela de isntruções ISA RV32I]()
 
 
 #### Divisão dos bits nas instruções
@@ -80,6 +86,27 @@ x30 | t5 | Valores temporários
 x31 | t6 | Valores temporários
 pc | - | Contador de programa
 
+### Opcodes para as instruções ISA RV32I
+* **Tipo U:**
+	* 0x37
+	* 0x17
+* **Tipo J:**
+	* 0x6f
+* **Tipo I:**
+	* 0x67
+	* 0x03
+	* 0x13
+	* 0x0f
+	* 0x73
+* **Tipo B:**
+	* 0x63
+* **Tipo S:**
+	* 0x23
+* **Tipo R:**
+	* 0x33
+	
+### Identificação das instruções
+* Uma isntrução do tipo R é identificada pelo opcode, funct_3 e funct_7 para os que tem funct_3 igual
 
 ### Links para continuar estudando
 * https://www.embarcados.com.br/fe310g-microcontrolador-open-source-estrutura-basica-risc-v/#:~:text=RISC%2DV%20%C3%A9%20uma%20ISA,e%20o%20MIPS16e)%20al%C3%A9m%20de
