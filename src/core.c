@@ -21,6 +21,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 #include <stdio.h>
+#include <opcodes.c>
 
 /* Instructions Hexa Codes */
 
@@ -28,16 +29,16 @@ SOFTWARE.
 #define VMACHINE_INSTRUCTION_RS_1		0x000f8000
 #define VMACHINE_INSTRUCTION_RS_2		0x01f00000
 #define VMACHINE_INSTRUCTION_FUNCT_3		0x00007000
-#define VMACHINE_INSTRUCTION_RD			0x00000f80
+#define VMACHINE_INSTRUCTION_RD		0x00000f80
 #define VMACHINE_INSTRUCTION_OPCODE		0x0000007f
 #define VMACHINE_INSTRUCTION_IMMEDIATE_I_TYPE	0xfff00000
-#define VMACHINE_INSTRUCTION_IMMEDIATE		0xfffff000
+#define VMACHINE_INSTRUCTION_IMMEDIATE	0xfffff000
 
 /* Instructions Hexa Shift Codes */
 
 #define VMACHINE_INSTRUCTION_SHIFT_FUNCT_7 		0X18
-#define VMACHINE_INSTRUCTION_SHIFT_RS_1			0x0c
-#define VMACHINE_INSTRUCTION_SHIFT_RS_2			0x14
+#define VMACHINE_INSTRUCTION_SHIFT_RS_1		0x0c
+#define VMACHINE_INSTRUCTION_SHIFT_RS_2		0x14
 #define VMACHINE_INSTRUCTION_SHIFT_FUNCT_3		0x0c
 #define VMACHINE_INSTRUCTION_SHIFT_RD			0x04
 #define VMACHINE_INSTRUCTION_SHIFT_IMMEDIATE_I_TYPE	0x14
@@ -66,46 +67,6 @@ uint32_t do_fetch(void) {
 	advances_pc(4);
 
 	return instruction;
-}
-
-/**
- * @brief Defines the instruction's type
- */
-char instruction_type(uint32_t opcode) {
-  	/* DOING */
-	switch(opcode) {
-		case 0x37:
-		case 0x17:
-			return 'U';
-		break;
-
-		case 0x6f:
-			return 'J';
-		break;
-
-		case 0x67:
-		case 0x03:
-		case 0x13:
-		case 0x0f:
-		case 0x73:
-			return 'I';
-		break;
-
-		case 0x63:
-			return 'B';
-		break;
-
-		case 0x23:
-			return 'S';
-		break;
-
-		case 0x33:
-			return 'R';
-		break;
-
-		default:
-			/* TO DO */
-	}
 }
 
 /**
@@ -154,7 +115,28 @@ void do_execute_J(uint32_t instruction) {
  * @brief Decodes the instruction and sends in to the corresponding execution
  */
 void do_decode(uint32_t instruction) {
-	/* TO DO */
+	uint32_t opcode = instruction & VMACHINE_INSTRUCTION_OPCODE;
+	
+	switch(opcode) {
+		case U_TYPE_IMMEDIATE_iNSTRUCTION:
+		case U_TYPE_PC_INSTRUCTION:
+			do_execute_U(instruction);
+		break;		
+		case J_TYPE_INSTRUCTION:
+			do_execute_J(instruction);
+		break;		
+		case B_TYPE_INSTRUCTIONS:
+			do_execute_B(instruction);
+		break;		
+		case S_TYPE_INSTRUCTIONS:
+			do_execute_S(instruction);
+		break;		
+		case R_TYPE_INSTRUCTIONS:
+			do_execute_R(instruction);
+		break;		
+		default:
+			do_execute_I(instruction);
+		break;
 }
 
 /**
