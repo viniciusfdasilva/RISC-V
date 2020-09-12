@@ -148,7 +148,20 @@ void do_execute_B(uint32_t instruction) {
  *  @brief Executes a U-Type Instruction
  */
 void do_execute_U(uint32_t instruction) {
-        /* TO DO */
+        uint32_t immediate 	= instruction & VMACHINE_INSTRUCTION_IMMEDIATE;
+	uint32_t rd		= instruction & VMACHINE_INSTRUCTION_RD;
+	uint32_t opcode		= instruction & VMACHINE_INSTRUCTION_OPCODE;
+
+	switch(opcode) {
+		case U_TYPE_IMMEDIATE_iNSTRUCTION:
+			/* TO DO */
+		break;
+		case U_TYPE_PC_INSTRUCTION:
+			/* TO DO */
+		break;
+		default:
+			error("Unknown instruction");
+		break;
 }
 
 /**
