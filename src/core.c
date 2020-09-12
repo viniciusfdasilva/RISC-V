@@ -153,10 +153,10 @@ void do_execute_U(uint32_t instruction) {
 	uint32_t opcode		= instruction & VMACHINE_INSTRUCTION_OPCODE;
 
 	switch(opcode) {
-		case U_TYPE_IMMEDIATE_iNSTRUCTION:
+		case INSTRUCTION_OPCODE_LUI:
 			/* TO DO */
 		break;
-		case U_TYPE_PC_INSTRUCTION:
+		case INSTRUCTION_OPCODE_AUIPC:
 			/* TO DO */
 		break;
 		default:
