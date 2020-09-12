@@ -33,3 +33,25 @@ SOFTWARE.
 #define B_TYPE_INSTRUCTIONS				0x63
 #define S_TYPE_INSTRUCTIONS				0x23
 #define R_TYPE_INSTRUCTIONS				0x33
+
+/* Defining the opcode of each instruction separately */
+
+/* U-Type */
+
+#define INSTRUCTION_OPCODE_LUI		0x37
+#define INSTRUCTION_OPCODE_AUIPC	0x17
+
+/* J-Type */
+#define INSTRUCTION_OPCODE_JAL		0x6f
+
+/* I-Type */
+/* TO DO */
+
+/* B-Type */
+/* TO DO */
+
+/* S-Type */
+/* TO DO */
+
+/* R-Type */
+/* TO DO */
