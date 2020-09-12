@@ -168,7 +168,17 @@ void do_execute_U(uint32_t instruction) {
  *  @brief Executes a J-Type Instruction
  */
 void do_execute_J(uint32_t instruction) {
-        /* TO DO */
+       	uint32_t immediate      = instruction & VMACHINE_INSTRUCTION_IMMEDIATE;
+       	uint32_t rd             = instruction & VMACHINE_INSTRUCTION_RD;
+	uint32_t opcode         = instruction & VMACHINE_INSTRUCTION_OPCODE;
+
+	switch(opcode) {
+		case INSTRUCTION_OPCODE_JAL:
+			/* TO DO */
+		break;
+		default:
+			error("Unknown instruction");
+		break;
 }
 
 /**
