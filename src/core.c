@@ -243,7 +243,42 @@ void do_execute_S(uint32_t instruction) {
  *  @brief Executes a B-Type Instruction
  */
 void do_execute_B(uint32_t instruction) {
-        /* TO DO */
+        uint32_t immediate_1	= instruction & VMACHINE_INSTRUCTION_FUNCT_7;
+		uint32_t rs2			= instruction & VMACHINE_INSTRUCTION_RS_2;
+		uint32_t rs1			= instruction & VMACHINE_INSTRUCTION_RS_2;
+		uint32_t funct_3		= instruction & VMACHINE_INSTRUCTION_FUNCT_3;
+		uint32_t immediate_2	= instruction & VMACHINE_INSTRUCTION_RD;
+		uint32_t opcode			= instruction & VMACHINE_INSTRUCTION_OPCODE;
+
+		immediate_1 = immediate_1	>> VMACHINE_INSTRUCTION_SHIFT_FUNCT_7;
+		rs2			= rs2			>> VMACHINE_INSTRUCTION_SHIFT_RS_2;
+		rs1			= rs1			>> VMACHINE_INSTRUCTION_SHIFT_RS_1;
+		funct_3		= funct_3		>> VMACHINE_INSTRUCTION_SHIFT_FUNCT_3;
+		immediate_2	= immediate_2	>> VMACHINE_INSTRUCTION_SHIFT_RD;
+
+		switch (funct_3) {
+		case INST_BEQ_FUNCT_3:
+			/* TO DO */
+		break;
+		case INST_BNE_FUNCT_3:
+			/* TO DO */
+		break;
+		case INST_BLT_FUNCT_3:
+			/* TO DO */
+		break;
+		case INST_BGE_FUNCT_3:
+			/* TO DO */
+		break;
+		case INST_BLTU_FUNCT_3:
+			/* TO DO */
+		break;
+		case INST_BGEU_FUNCT_3:
+			/* TO DO */
+		break;
+		default:
+			error("Unknown instruction");
+		break;
+		}
 }
 
 /**
