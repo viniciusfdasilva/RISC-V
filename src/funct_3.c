@@ -61,3 +61,14 @@
 #define INST_CSRRWI_FUNCT_3     0x05
 #define INST_CSRRSI_FUNCT_3     0x06
 #define INST_CSRRCI_FUNCT_3     0x07
+
+/* B-Type*/
+#define INST_BEQ_FUNCT_3    0x00
+#define INST_BNE_FUNCT_3    0x01
+#define INST_BLT_FUNCT_3    0x04
+#define INST_BGE_FUNCT_3    0x05
+#define INST_BLTU_FUNCT_3   0x06
+#define INST_BGEU_FUNCT_3   0x07
+
+/* S-Type */
+/* TO DO */
