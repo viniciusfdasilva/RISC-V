@@ -25,22 +25,22 @@ SOFTWARE.
 
 /* Instructions Hexa Codes */
 
-#define VMACHINE_INSTRUCTION_FUNCT_7		0xfe000000
-#define VMACHINE_INSTRUCTION_RS_1		0x000f8000
-#define VMACHINE_INSTRUCTION_RS_2		0x01f00000
-#define VMACHINE_INSTRUCTION_FUNCT_3		0x00007000
-#define VMACHINE_INSTRUCTION_RD			0x00000f80
-#define VMACHINE_INSTRUCTION_OPCODE		0x0000007f
+#define VMACHINE_INSTRUCTION_FUNCT_7			0xfe000000
+#define VMACHINE_INSTRUCTION_RS_1				0x000f8000
+#define VMACHINE_INSTRUCTION_RS_2				0x01f00000
+#define VMACHINE_INSTRUCTION_FUNCT_3			0x00007000
+#define VMACHINE_INSTRUCTION_RD					0x00000f80
+#define VMACHINE_INSTRUCTION_OPCODE				0x0000007f
 #define VMACHINE_INSTRUCTION_IMMEDIATE_I_TYPE	0xfff00000
-#define VMACHINE_INSTRUCTION_IMMEDIATE		0xfffff000
+#define VMACHINE_INSTRUCTION_IMMEDIATE			0xfffff000
 
 /* Instructions Hexa Shift Codes */
 
-#define VMACHINE_INSTRUCTION_SHIFT_FUNCT_7 		0X18
-#define VMACHINE_INSTRUCTION_SHIFT_RS_1			0x0c
-#define VMACHINE_INSTRUCTION_SHIFT_RS_2			0x14
-#define VMACHINE_INSTRUCTION_SHIFT_FUNCT_3		0x0c
-#define VMACHINE_INSTRUCTION_SHIFT_RD			0x04
+#define VMACHINE_INSTRUCTION_SHIFT_FUNCT_7 			0X18
+#define VMACHINE_INSTRUCTION_SHIFT_RS_1				0x0c
+#define VMACHINE_INSTRUCTION_SHIFT_RS_2				0x14
+#define VMACHINE_INSTRUCTION_SHIFT_FUNCT_3			0x0c
+#define VMACHINE_INSTRUCTION_SHIFT_RD				0x04
 #define VMACHINE_INSTRUCTION_SHIFT_IMMEDIATE_I_TYPE	0x14
 #define VMACHINE_INSTRUCTION_SHIFT_IMMEDIATE		0x0c
 
@@ -73,52 +73,55 @@ uint32_t do_fetch(void) {
  *  @brief Executes a R-Type Instruction
  */
 void do_execute_R(uint32_t instruction) {
-	uint32_t funct_7 = instruction & VMACHINE_INSTRUCTION_FUNCT_7;
-	uint32_t rs2	 = instruction & VMACHINE_INSTRUCTION_RS_2;
-	uint32_t rs1	 = instruction & VMACHINE_INSTRUCTION_RS_1;
-	uint32_t funct_3 = instruction & VMACHINE_INSTRUCTION_FUNCT_3;
-	uint32_t rd	 = instruction & VMACHINE_INSTRUCTION_RD;
-	uint32_t opcode  = instruction & VMACHINE_INSTRUCTION_OPCODE;
+	uint32_t funct_7 	= instruction & VMACHINE_INSTRUCTION_FUNCT_7;
+	uint32_t rs2	 	= instruction & VMACHINE_INSTRUCTION_RS_2;
+	uint32_t rs1	 	= instruction & VMACHINE_INSTRUCTION_RS_1;
+	uint32_t funct_3 	= instruction & VMACHINE_INSTRUCTION_FUNCT_3;
+	uint32_t rd	 		= instruction & VMACHINE_INSTRUCTION_RD;
+	uint32_t opcode 	= instruction & VMACHINE_INSTRUCTION_OPCODE;
 
-	funct_7 = funct_7 >> VMACHINE_INSTRUCTION_SHIFT_FUNCT_7;
-	rs2	= rs2 >> VMACHINE_INSTRUCTION_SHIFT_RS_2;
-	rs1	= rs1 >> VMACHINE_INSTRUCTION_SHIFT_RS_1;
-	funct_3	= funct_3 >> VMACHINE_INSTRUCTION_SHIFT_FUNCT_3;
-	rd	= rd >> VMACHINE_INSTRUCTION_SHIFT_FUNCT_3;
+	funct_7 = funct_7 	>> VMACHINE_INSTRUCTION_SHIFT_FUNCT_7;
+	rs2		= rs2 		>> VMACHINE_INSTRUCTION_SHIFT_RS_2;
+	rs1		= rs1 		>> VMACHINE_INSTRUCTION_SHIFT_RS_1;
+	funct_3	= funct_3 	>> VMACHINE_INSTRUCTION_SHIFT_FUNCT_3;
+	rd		= rd 		>> VMACHINE_INSTRUCTION_SHIFT_FUNCT_3;
 
 	switch(func_3) {
 		case INST_ADD_FUNCT_3:
 			if (funct_7 == INST_ADD_FUNCT_7)
-			      registers[rd] = registers[rs2] + registers[rs1];
+			    registers[rd] = registers[rs2] + registers[rs1];
 		break;
 		case INST_SUB_FUNCT_3:
 			if (funct_7 == INST_SUB_FUNCT_7)
-				registers[rd] = registers[rs1] - registers[rs1];
+			registers[rd] = registers[rs1] - registers[rs1];
 		break;
 		case INST_SLL_FUNCT_3:
 			/* TO DO */
 		break;
 		case INST_SLT_FUNCT_3:
-                        registers[rd] = (registers[rs2] < registers[rs1]) ? 1 : 0;
-                break;
-                case INST_SLTU_FUNCT_3:
-                        registers[rd] = (registers[rs2] < registers[rs1]) ? 1 : 0;
-                break;
-                case INST_XOR_FUNCT_3:
-                        registers[rd] = registers[rs1] ^ registers[rs2];
-                break;
-                case INST_SRL_FUNCT_3:
-                        /* TO DO */
-                break;
-                case INST_SRA_FUNCT_3:
-                        /* TO DO */
-                break;
-                case INST_OR_FUNCT_3:
-                        registers[rd] = registers[rs1] | registers[rs2];
-                break;
-                case INST_AND_FUNCT_3:
-                        registers[rd] = registers[rs1] & registers[rs2];
-                break;	
+			registers[rd] = (registers[rs2] < registers[rs1]) ? 1 : 0;
+		break;
+		case INST_SLTU_FUNCT_3:
+			registers[rd] = (registers[rs2] < registers[rs1]) ? 1 : 0;
+		break;
+		case INST_XOR_FUNCT_3:
+			registers[rd] = registers[rs1] ^ registers[rs2];
+		break;
+		case INST_SRL_FUNCT_3:
+			/* TO DO */
+		break;
+		case INST_SRA_FUNCT_3:
+			/* TO DO */
+		break;
+		case INST_OR_FUNCT_3:
+			registers[rd] = registers[rs1] | registers[rs2];
+		break;
+		case INST_AND_FUNCT_3:
+			registers[rd] = registers[rs1] & registers[rs2];
+		break;
+		default:
+			error("Unknown instruction");
+		break;
 	}
 
 }
@@ -148,8 +151,8 @@ void do_execute_B(uint32_t instruction) {
  *  @brief Executes a U-Type Instruction
  */
 void do_execute_U(uint32_t instruction) {
-        uint32_t immediate 	= instruction & VMACHINE_INSTRUCTION_IMMEDIATE;
-	uint32_t rd		= instruction & VMACHINE_INSTRUCTION_RD;
+    uint32_t immediate 	= instruction & VMACHINE_INSTRUCTION_IMMEDIATE;
+	uint32_t rd			= instruction & VMACHINE_INSTRUCTION_RD;
 	uint32_t opcode		= instruction & VMACHINE_INSTRUCTION_OPCODE;
 
 	switch(opcode) {
@@ -170,7 +173,7 @@ void do_execute_U(uint32_t instruction) {
 void do_execute_J(uint32_t instruction) {
        	uint32_t immediate      = instruction & VMACHINE_INSTRUCTION_IMMEDIATE;
        	uint32_t rd             = instruction & VMACHINE_INSTRUCTION_RD;
-	uint32_t opcode         = instruction & VMACHINE_INSTRUCTION_OPCODE;
+		uint32_t opcode         = instruction & VMACHINE_INSTRUCTION_OPCODE;
 
 	switch(opcode) {
 		case INSTRUCTION_OPCODE_JAL:
