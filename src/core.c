@@ -134,118 +134,111 @@ void do_execute_R(uint32_t instruction) {
  *  @brief Executes a I-Type Instruction
  */
 void do_execute_I(uint32_t instruction) {
-        uint32_t immediate	= instruction & VMACHINE_INSTRUCTION_IMMEDIATE_I_TYPE;
-		uint32_t rs1		= instruction & VMACHINE_INSTRUCTION_RS_1;
-		uint32_t funct_3	= instruction & VMACHINE_INSTRUCTION_FUNCT_3;
-		uint32_t rd			= instruction & VMACHINE_INSTRUCTION_RD;
-		uint32_t opcode		= instruction & VMACHINE_INSTRUCTION_OPCODE;
+	uint32_t immediate	= instruction & VMACHINE_INSTRUCTION_IMMEDIATE_I_TYPE;
+	uint32_t rs1		= instruction & VMACHINE_INSTRUCTION_RS_1;
+	uint32_t funct_3	= instruction & VMACHINE_INSTRUCTION_FUNCT_3;
+	uint32_t rd			= instruction & VMACHINE_INSTRUCTION_RD;
+	uint32_t opcode		= instruction & VMACHINE_INSTRUCTION_OPCODE;
 
-		immediate	= immediate >> VMACHINE_INSTRUCTION_SHIFT_IMMEDIATE_I_TYPE;
-		rs1			= rs1		>> VMACHINE_INSTRUCTION_SHIFT_RS_1;
-		funct_3		= funct_3	>> VMACHINE_INSTRUCTION_SHIFT_FUNCT_3;
-		rd			= rd		>> VMACHINE_INSTRUCTION_SHIFT_RD;
+	immediate	= immediate >> VMACHINE_INSTRUCTION_SHIFT_IMMEDIATE_I_TYPE;
+	rs1			= rs1		>> VMACHINE_INSTRUCTION_SHIFT_RS_1;
+	funct_3		= funct_3	>> VMACHINE_INSTRUCTION_SHIFT_FUNCT_3;
+	rd			= rd		>> VMACHINE_INSTRUCTION_SHIFT_RD;
 
-		switch(opcode) {
-			case I_TYPE_JUMPER_INSTRUCTION:
-				if (funct_3 == INST_JALR_FUNCT_3) {
-					/* TO DO */
-				}
-			break;
-			case I_TYPE_LOAD_INSTRUCTIONS:
-				if (funct_3 == INST_LB_FUNCT_3) {
-					/* TO DO */
-				}
-				else if (funct_3 == INST_LH_FUNCT_3) {
-					/* TO DO */
-				}
-				else if (funct_3 == INST_LW_FUNCT_3) {
-					/* TO DO */
-				}
-				else if (funct_3 == INST_LBU_FUNCT_3) {
-					/* TO DO */
-				}
-				else if (funct_3 == INST_LHU_FUNCT_3) {
-					/* TO DO */
-				}				
-			break;
-			case I_TYPE_REGISTERS_INSTRUCTIONS:
-				if (funct_3 == INST_ADDI_FUNCT_3) {
-					/* TO DO */
-				}
-				else if (funct_3 == INST_SLTI_FUNCT_3) {
-					/* TO DO */
-				}
-				else if (funct_3 == INST_SLTIU_FUNCT_3) {
-					/* TO DO */
-				}
-				else if (funct_3 == INST_XORI_FUNCT_3) {
-					/* TO DO */
-				}
-				else if (funct_3 == INST_ORI_FUNCT_3) {
-					/* TO DO */
-				}
-				else if (funct_3 == INST_ANDI_FUNCT_3) {
-					/* TO DO */
-				}
-				else if (funct_3 == INST_SLLI_FUNCT_3) {
-					/* TO DO */
-				}
-				else if (funct_3 == INST_SRLI_FUNCT_3) {
-					/* TO DO */
-				}
-				else if (funct_3 == INST_SRAI_FUNCT_3) {
-					/* TO DO */
-				}
-			break;
-			case I_TYPE_FENCE_INSTRUCTIONS:
+	switch(opcode) {
+		case I_TYPE_JUMPER_INSTRUCTION:
+			if (funct_3 == INST_JALR_FUNCT_3) {
 				/* TO DO */
-			break;
-			case I_TYPE_CALL_BREAKPOINT_CRS_INSTRUCTIONS:
-				if (funct_3 == INST_ECALL_FUNCT_3) {
-					/* TO DO */
-				}
-				if (funct_3 == INST_EBREAK_FUNCT_3) {
-					/* TO DO */
-				}
-				if (funct_3 == INST_CSRRW_FUNCT_3) {
-					/* TO DO */
-				}
-				if (funct_3 == INST_CSRRS_FUNCT_3) {
-					/* TO DO */
-				}
-				if (funct_3 == INST_CSRRC_FUNCT_3) {
-					/* TO DO */
-				}
-				if (funct_3 == INST_CSRRWI_FUNCT_3) {
-					/* TO DO */
-				}
-				if (funct_3 == INST_CSRRSI_FUNCT_3) {
-					/* TO DO */
-				}
-				if (funct_3 == INST_CSRRCI_FUNCT_3) {
-					/* TO DO */
-				}
-			break;
-			default:
-				error("Unknown instruction");
-			break;
-		}
+			}
+		break;
+		case I_TYPE_LOAD_INSTRUCTIONS:
+			if (funct_3 == INST_LB_FUNCT_3) {
+				/* TO DO */
+			}
+			else if (funct_3 == INST_LH_FUNCT_3) {
+				/* TO DO */
+			}
+			else if (funct_3 == INST_LW_FUNCT_3) {
+				/* TO DO */
+			}
+			else if (funct_3 == INST_LBU_FUNCT_3) {
+				/* TO DO */
+			}
+			else if (funct_3 == INST_LHU_FUNCT_3) {
+				/* TO DO */
+			}				
+		break;
+		case I_TYPE_REGISTERS_INSTRUCTIONS:
+			if (funct_3 == INST_ADDI_FUNCT_3) {
+				/* TO DO */
+			}
+			else if (funct_3 == INST_SLTI_FUNCT_3) {
+				/* TO DO */
+			}
+			else if (funct_3 == INST_SLTIU_FUNCT_3) {
+				/* TO DO */
+			}
+			else if (funct_3 == INST_XORI_FUNCT_3) {
+				/* TO DO */
+			}
+			else if (funct_3 == INST_ORI_FUNCT_3) {
+				/* TO DO */
+			}
+			else if (funct_3 == INST_ANDI_FUNCT_3) {
+				/* TO DO */
+			}
+			else if (funct_3 == INST_SLLI_FUNCT_3) {
+				/* TO DO */
+			}
+			else if (funct_3 == INST_SRLI_FUNCT_3) {
+				/* TO DO */
+			}
+			else if (funct_3 == INST_SRAI_FUNCT_3) {
+				/* TO DO */
+			}
+		break;
+		case I_TYPE_FENCE_INSTRUCTIONS:
+			/* TO DO */
+		break;
+		case I_TYPE_CALL_BREAKPOINT_CRS_INSTRUCTIONS:
+			if (funct_3 == INST_ECALL_FUNCT_3) {
+				/* TO DO */
+			}
+			if (funct_3 == INST_EBREAK_FUNCT_3) {
+				/* TO DO */
+			}
+			if (funct_3 == INST_CSRRW_FUNCT_3) {
+				/* TO DO */
+			}
+			if (funct_3 == INST_CSRRS_FUNCT_3) {
+				/* TO DO */
+			}
+			if (funct_3 == INST_CSRRC_FUNCT_3) {
+				/* TO DO */
+			}
+			if (funct_3 == INST_CSRRWI_FUNCT_3) {
+				/* TO DO */
+			}
+			if (funct_3 == INST_CSRRSI_FUNCT_3) {
+				/* TO DO */
+			}
+			if (funct_3 == INST_CSRRCI_FUNCT_3) {
+				/* TO DO */
+			}
+		break;
+		default:
+			error("Unknown instruction");
+		break;
+	}
 }
 
 /**
  *  @brief Executes a S-Type Instruction
  */
 void do_execute_S(uint32_t instruction) {
-        /* TO DO */
-}
-
-/**
- *  @brief Executes a B-Type Instruction
- */
-void do_execute_B(uint32_t instruction) {
         uint32_t immediate_1	= instruction & VMACHINE_INSTRUCTION_FUNCT_7;
 		uint32_t rs2			= instruction & VMACHINE_INSTRUCTION_RS_2;
-		uint32_t rs1			= instruction & VMACHINE_INSTRUCTION_RS_2;
+		uint32_t rs1			= instruction & VMACHINE_INSTRUCTION_RS_1;
 		uint32_t funct_3		= instruction & VMACHINE_INSTRUCTION_FUNCT_3;
 		uint32_t immediate_2	= instruction & VMACHINE_INSTRUCTION_RD;
 		uint32_t opcode			= instruction & VMACHINE_INSTRUCTION_OPCODE;
@@ -254,9 +247,42 @@ void do_execute_B(uint32_t instruction) {
 		rs2			= rs2			>> VMACHINE_INSTRUCTION_SHIFT_RS_2;
 		rs1			= rs1			>> VMACHINE_INSTRUCTION_SHIFT_RS_1;
 		funct_3		= funct_3		>> VMACHINE_INSTRUCTION_SHIFT_FUNCT_3;
-		immediate_2	= immediate_2	>> VMACHINE_INSTRUCTION_SHIFT_RD;
+		immediate_2 = immediate_2	>> VMACHINE_INSTRUCTION_SHIFT_RD;
 
 		switch (funct_3) {
+			case INST_SB_FUNCT_3:
+				/* TO DO */
+			break;	
+			case INST_SH_FUNCT_3:
+				/* TO DO */
+			break;	
+			case INST_SW_FUNCT_3:
+				/* TO DO */
+			break;			
+			default:
+				error("Unknown instruction");
+			break;
+		}
+}
+
+/**
+ *  @brief Executes a B-Type Instruction
+ */
+void do_execute_B(uint32_t instruction) {
+	uint32_t immediate_1	= instruction & VMACHINE_INSTRUCTION_FUNCT_7;
+	uint32_t rs2			= instruction & VMACHINE_INSTRUCTION_RS_2;
+	uint32_t rs1			= instruction & VMACHINE_INSTRUCTION_RS_2;
+	uint32_t funct_3		= instruction & VMACHINE_INSTRUCTION_FUNCT_3;
+	uint32_t immediate_2	= instruction & VMACHINE_INSTRUCTION_RD;
+	uint32_t opcode			= instruction & VMACHINE_INSTRUCTION_OPCODE;
+
+	immediate_1 = immediate_1	>> VMACHINE_INSTRUCTION_SHIFT_FUNCT_7;
+	rs2			= rs2			>> VMACHINE_INSTRUCTION_SHIFT_RS_2;
+	rs1			= rs1			>> VMACHINE_INSTRUCTION_SHIFT_RS_1;
+	funct_3		= funct_3		>> VMACHINE_INSTRUCTION_SHIFT_FUNCT_3;
+	immediate_2	= immediate_2	>> VMACHINE_INSTRUCTION_SHIFT_RD;
+
+	switch (funct_3) {
 		case INST_BEQ_FUNCT_3:
 			/* TO DO */
 		break;
@@ -278,7 +304,7 @@ void do_execute_B(uint32_t instruction) {
 		default:
 			error("Unknown instruction");
 		break;
-		}
+	}
 }
 
 /**
@@ -299,15 +325,16 @@ void do_execute_U(uint32_t instruction) {
 		default:
 			error("Unknown instruction");
 		break;
+	}
 }
 
 /**
  *  @brief Executes a J-Type Instruction
  */
 void do_execute_J(uint32_t instruction) {
-       	uint32_t immediate      = instruction & VMACHINE_INSTRUCTION_IMMEDIATE;
-       	uint32_t rd             = instruction & VMACHINE_INSTRUCTION_RD;
-		uint32_t opcode         = instruction & VMACHINE_INSTRUCTION_OPCODE;
+	uint32_t immediate      = instruction & VMACHINE_INSTRUCTION_IMMEDIATE;
+	uint32_t rd             = instruction & VMACHINE_INSTRUCTION_RD;
+	uint32_t opcode         = instruction & VMACHINE_INSTRUCTION_OPCODE;
 
 	switch(opcode) {
 		case INSTRUCTION_OPCODE_JAL:
@@ -316,6 +343,7 @@ void do_execute_J(uint32_t instruction) {
 		default:
 			error("Unknown instruction");
 		break;
+	}
 }
 
 /**
@@ -344,6 +372,7 @@ void do_decode(uint32_t instruction) {
 		default:
 			do_execute_I(instruction);
 		break;
+	}
 }
 
 /**
