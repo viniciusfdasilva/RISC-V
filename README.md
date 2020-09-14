@@ -21,7 +21,9 @@ Operações com registradores | Valores imediatos short e loads  | Stores | Desv
 
 
 * As 47 Instruções de propósito geral da ISA RV32I
-![Tabela de isntruções ISA RV32I]()
+
+
+![Tabela de isntruções ISA RV32I](https://github.com/DayaneCordeiro/RISC-V/blob/master/Imagens/As%2047%20instru%C3%A7%C3%B5es.png)
 
 
 #### Divisão dos bits nas instruções
