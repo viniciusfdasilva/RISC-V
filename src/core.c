@@ -1,27 +1,31 @@
-MIT License
+// MIT License
 
-Copyright (c) 2020 Dayane Cordeiro
+// Copyright (c) 2020 Dayane Cordeiro
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+// The above copyright notice and this permission notice shall be included in all
+// copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+// SOFTWARE.
 
 #include <stdio.h>
-#include <opcodes.c>
+#include <stdint.h>
+#include "opcodes.c";
+#include "funct_3.c";
+#include "funct_7.c";
+
 
 /* Instructions Hexa Codes */
 
@@ -86,14 +90,14 @@ void do_execute_R(uint32_t instruction) {
 	funct_3	= funct_3 	>> VMACHINE_INSTRUCTION_SHIFT_FUNCT_3;
 	rd		= rd 		>> VMACHINE_INSTRUCTION_SHIFT_FUNCT_3;
 
-	switch(func_3) {
+	switch(funct_3) {
 		case INST_ADD_FUNCT_3:
 			if (funct_7 == INST_ADD_FUNCT_7)
 			    registers[rd] = registers[rs2] + registers[rs1];
 		break;
 		case INST_SUB_FUNCT_3:
 			if (funct_7 == INST_SUB_FUNCT_7)
-			registers[rd] = registers[rs1] - registers[rs1];
+				registers[rd] = registers[rs1] - registers[rs1];
 		break;
 		case INST_SLL_FUNCT_3:
 			/* TO DO */
@@ -130,7 +134,102 @@ void do_execute_R(uint32_t instruction) {
  *  @brief Executes a I-Type Instruction
  */
 void do_execute_I(uint32_t instruction) {
-        /* TO DO */
+        uint32_t immediate	= instruction & VMACHINE_INSTRUCTION_IMMEDIATE_I_TYPE;
+		uint32_t rs1		= instruction & VMACHINE_INSTRUCTION_RS_1;
+		uint32_t funct_3	= instruction & VMACHINE_INSTRUCTION_FUNCT_3;
+		uint32_t rd			= instruction & VMACHINE_INSTRUCTION_RD;
+		uint32_t opcode		= instruction & VMACHINE_INSTRUCTION_OPCODE;
+
+		immediate	= immediate >> VMACHINE_INSTRUCTION_SHIFT_IMMEDIATE_I_TYPE;
+		rs1			= rs1		>> VMACHINE_INSTRUCTION_SHIFT_RS_1;
+		funct_3		= funct_3	>> VMACHINE_INSTRUCTION_SHIFT_FUNCT_3;
+		rd			= rd		>> VMACHINE_INSTRUCTION_SHIFT_RD;
+
+		switch(opcode) {
+			case I_TYPE_JUMPER_INSTRUCTION:
+				if (funct_3 == INST_JALR_FUNCT_3) {
+					/* TO DO */
+				}
+			break;
+			case I_TYPE_LOAD_INSTRUCTIONS:
+				if (funct_3 == INST_LB_FUNCT_3) {
+					/* TO DO */
+				}
+				else if (funct_3 == INST_LH_FUNCT_3) {
+					/* TO DO */
+				}
+				else if (funct_3 == INST_LW_FUNCT_3) {
+					/* TO DO */
+				}
+				else if (funct_3 == INST_LBU_FUNCT_3) {
+					/* TO DO */
+				}
+				else if (funct_3 == INST_LHU_FUNCT_3) {
+					/* TO DO */
+				}				
+			break;
+			case I_TYPE_REGISTERS_INSTRUCTIONS:
+				if (funct_3 == INST_ADDI_FUNCT_3) {
+					/* TO DO */
+				}
+				else if (funct_3 == INST_SLTI_FUNCT_3) {
+					/* TO DO */
+				}
+				else if (funct_3 == INST_SLTIU_FUNCT_3) {
+					/* TO DO */
+				}
+				else if (funct_3 == INST_XORI_FUNCT_3) {
+					/* TO DO */
+				}
+				else if (funct_3 == INST_ORI_FUNCT_3) {
+					/* TO DO */
+				}
+				else if (funct_3 == INST_ANDI_FUNCT_3) {
+					/* TO DO */
+				}
+				else if (funct_3 == INST_SLLI_FUNCT_3) {
+					/* TO DO */
+				}
+				else if (funct_3 == INST_SRLI_FUNCT_3) {
+					/* TO DO */
+				}
+				else if (funct_3 == INST_SRAI_FUNCT_3) {
+					/* TO DO */
+				}
+			break;
+			case I_TYPE_FENCE_INSTRUCTIONS:
+				/* TO DO */
+			break;
+			case I_TYPE_CALL_BREAKPOINT_CRS_INSTRUCTIONS:
+				if (funct_3 == INST_ECALL_FUNCT_3) {
+					/* TO DO */
+				}
+				if (funct_3 == INST_EBREAK_FUNCT_3) {
+					/* TO DO */
+				}
+				if (funct_3 == INST_CSRRW_FUNCT_3) {
+					/* TO DO */
+				}
+				if (funct_3 == INST_CSRRS_FUNCT_3) {
+					/* TO DO */
+				}
+				if (funct_3 == INST_CSRRC_FUNCT_3) {
+					/* TO DO */
+				}
+				if (funct_3 == INST_CSRRWI_FUNCT_3) {
+					/* TO DO */
+				}
+				if (funct_3 == INST_CSRRSI_FUNCT_3) {
+					/* TO DO */
+				}
+				if (funct_3 == INST_CSRRCI_FUNCT_3) {
+					/* TO DO */
+				}
+			break;
+			default:
+				error("Unknown instruction");
+			break;
+		}
 }
 
 /**
@@ -232,7 +331,7 @@ void core_init(void) {
 void core_run(void) {
 	while (1) {
 		uint32_t instruction;
-		intstruction = do_fetch();
+		instruction = do_fetch();
 		do_decode(instruction);
 		do_interrupts();
 	}
@@ -248,6 +347,6 @@ uint32_t get_registers(int reg_num) {
 /**
  * @brief PC Value Getter
  */
-uint32_t get_pc(void)
+uint32_t get_pc(void) {
 	return pc;
 }
