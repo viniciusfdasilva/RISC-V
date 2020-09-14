@@ -71,4 +71,6 @@
 #define INST_BGEU_FUNCT_3   0x07
 
 /* S-Type */
-/* TO DO */
+#define INST_SB_FUNCT_3 0x00
+#define INST_SH_FUNCT_3 0x01
+#define INST_SW_FUNCT_3 0x02
