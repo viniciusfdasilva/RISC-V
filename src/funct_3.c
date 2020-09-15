@@ -24,16 +24,14 @@
 /* DOING */
 
 /* R-Type */
-#define INST_ADD_FUNCT_3  0x00
-#define INST_SUB_FUNCT_3  0x00
-#define INST_SLL_FUNCT_3  0x01
-#define INST_SLT_FUNCT_3  0x02
-#define INST_SLTU_FUNCT_3 0x03
-#define INST_XOR_FUNCT_3  0x04
-#define INST_SRL_FUNCT_3  0x05
-#define INST_SRA_FUNCT_3  0x05
-#define INST_OR_FUNCT_3   0x06
-#define INST_AND_FUNCT_3  0x07
+#define INST_ADD_SUB_FUNCT_3    0x00
+#define INST_SLL_FUNCT_3        0x01
+#define INST_SLT_FUNCT_3        0x02
+#define INST_SLTU_FUNCT_3       0x03
+#define INST_XOR_FUNCT_3        0x04
+#define INST_SRL_SRA_FUNCT_3    0x05
+#define INST_OR_FUNCT_3         0x06
+#define INST_AND_FUNCT_3        0x07
 
 /* I_Type */
 #define INST_JALR_FUNCT_3       0x00

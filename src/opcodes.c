@@ -22,9 +22,9 @@
 
 /* Instructions Opcodes Division */
 
-#define U_TYPE_IMMEDIATE_INSTRUCTION			0X37
-#define U_TYPE_PC_INSTRUCTION			    	0X17
-#define J_TYPE_INSTRUCTION			        	0X6f
+#define U_TYPE_IMMEDIATE_INSTRUCTION			0x37
+#define U_TYPE_PC_INSTRUCTION			    	0x17
+#define J_TYPE_INSTRUCTION			        	0x6f
 #define I_TYPE_JUMPER_INSTRUCTION		    	0x67
 #define I_TYPE_LOAD_INSTRUCTIONS		    	0x03
 #define I_TYPE_REGISTERS_INSTRUCTIONS			0x13
