@@ -348,7 +348,7 @@ void do_decode(uint32_t instruction) {
 	uint32_t opcode = instruction & VMACHINE_INSTRUCTION_OPCODE;
 	
 	switch(opcode) {
-		case U_TYPE_IMMEDIATE_iNSTRUCTION:
+		case U_TYPE_IMMEDIATE_INSTRUCTION:
 		case U_TYPE_PC_INSTRUCTION:
 			do_execute_U(instruction);
 		break;		
