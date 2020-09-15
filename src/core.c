@@ -91,12 +91,10 @@ void do_execute_R(uint32_t instruction) {
 	rd		= rd 		>> VMACHINE_INSTRUCTION_SHIFT_FUNCT_3;
 
 	switch(funct_3) {
-		case INST_ADD_FUNCT_3:
+		case INST_ADD_SUB_FUNCT_3:
 			if (funct_7 == INST_ADD_FUNCT_7)
 			    registers[rd] = registers[rs2] + registers[rs1];
-		break;
-		case INST_SUB_FUNCT_3:
-			if (funct_7 == INST_SUB_FUNCT_7)
+			else if (funct_7 == INST_SUB_FUNCT_7)
 				registers[rd] = registers[rs1] - registers[rs1];
 		break;
 		case INST_SLL_FUNCT_3:
@@ -111,10 +109,7 @@ void do_execute_R(uint32_t instruction) {
 		case INST_XOR_FUNCT_3:
 			registers[rd] = registers[rs1] ^ registers[rs2];
 		break;
-		case INST_SRL_FUNCT_3:
-			/* TO DO */
-		break;
-		case INST_SRA_FUNCT_3:
+		case INST_SRL_SRA_FUNCT_3:
 			/* TO DO */
 		break;
 		case INST_OR_FUNCT_3:
