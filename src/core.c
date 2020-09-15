@@ -93,24 +93,24 @@ void do_execute_R(uint32_t instruction) {
 	switch(funct_3) {
 		case INST_ADD_SUB_FUNCT_3:
 			if (funct_7 == INST_ADD_FUNCT_7)
-			    registers[rd] = registers[rs2] + registers[rs1];
+			    registers[rd] = registers[rs1] + registers[rs1];
 			else if (funct_7 == INST_SUB_FUNCT_7)
-				registers[rd] = registers[rs1] - registers[rs1];
+				registers[rd] = registers[rs1] - registers[rs2];
 		break;
 		case INST_SLL_FUNCT_3:
-			/* TO DO */
+			registers[rd] = registers[rs1] << registers[rs2];
 		break;
 		case INST_SLT_FUNCT_3:
-			registers[rd] = (registers[rs2] < registers[rs1]) ? 1 : 0;
+			registers[rd] = (registers[rs1] < registers[rs2]) ? 1 : 0;
 		break;
 		case INST_SLTU_FUNCT_3:
-			registers[rd] = (registers[rs2] < registers[rs1]) ? 1 : 0;
+			registers[rd] = (registers[rs1] < registers[rs2]) ? 1 : 0;
 		break;
 		case INST_XOR_FUNCT_3:
 			registers[rd] = registers[rs1] ^ registers[rs2];
 		break;
 		case INST_SRL_SRA_FUNCT_3:
-			/* TO DO */
+			registers[rd] = registers[rs1] >> registers[rs2];
 		break;
 		case INST_OR_FUNCT_3:
 			registers[rd] = registers[rs1] | registers[rs2];
