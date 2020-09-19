@@ -284,22 +284,28 @@ void do_execute_B(uint32_t instruction) {
 
 	switch (funct_3) {
 		case INST_BEQ_FUNCT_3:
-			/* TO DO */
+			if (registers[rs1] == registers[rs2])
+				advances_pc(immediate_1);
 		break;
 		case INST_BNE_FUNCT_3:
-			/* TO DO */
+			if (registers[rs1] != registers[rs2])
+				advances_pc(immediate_1);
 		break;
 		case INST_BLT_FUNCT_3:
-			/* TO DO */
+			if (registers[rs1] < registers[rs2])
+				advances_pc(immediate_1);
 		break;
 		case INST_BGE_FUNCT_3:
-			/* TO DO */
+			if (registers[rs1] >= registers[rs2])
+				advances_pc(immediate_1);
 		break;
 		case INST_BLTU_FUNCT_3:
-			/* TO DO */
+			if (registers[rs1] < registers[rs2])
+				advances_pc(immediate_1);
 		break;
 		case INST_BGEU_FUNCT_3:
-			/* TO DO */
+			if (registers[rs1] >= registers[rs2])
+				advances_pc(immediate_1);
 		break;
 		default:
 			error("Unknown instruction");
