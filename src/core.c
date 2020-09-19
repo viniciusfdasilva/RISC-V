@@ -129,67 +129,72 @@ void do_execute_R(uint32_t instruction) {
  *  @brief Executes a I-Type Instruction
  */
 void do_execute_I(uint32_t instruction) {
-	uint32_t immediate	= instruction & VMACHINE_INSTRUCTION_IMMEDIATE_I_TYPE;
+	uint32_t immediate1	= instruction & VMACHINE_INSTRUCTION_IMMEDIATE_I_TYPE;
 	uint32_t rs1		= instruction & VMACHINE_INSTRUCTION_RS_1;
 	uint32_t funct_3	= instruction & VMACHINE_INSTRUCTION_FUNCT_3;
 	uint32_t rd			= instruction & VMACHINE_INSTRUCTION_RD;
 	uint32_t opcode		= instruction & VMACHINE_INSTRUCTION_OPCODE;
+	uint32_t immediate2 = instruction & VMACHINE_INSTRUCTION_FUNCT_7;
+	uint32_t shamt		= instruction & VMACHINE_INSTRUCTION_RS_2;
 
-	immediate	= immediate >> VMACHINE_INSTRUCTION_SHIFT_IMMEDIATE_I_TYPE;
-	rs1			= rs1		>> VMACHINE_INSTRUCTION_SHIFT_RS_1;
-	funct_3		= funct_3	>> VMACHINE_INSTRUCTION_SHIFT_FUNCT_3;
-	rd			= rd		>> VMACHINE_INSTRUCTION_SHIFT_RD;
+	immediate1	= immediate1	>> VMACHINE_INSTRUCTION_SHIFT_IMMEDIATE_I_TYPE;
+	rs1			= rs1			>> VMACHINE_INSTRUCTION_SHIFT_RS_1;
+	funct_3		= funct_3		>> VMACHINE_INSTRUCTION_SHIFT_FUNCT_3;
+	rd			= rd			>> VMACHINE_INSTRUCTION_SHIFT_RD;
+	immediate2	= immediate2	>> VMACHINE_INSTRUCTION_SHIFT_FUNCT_7;
+	shamt		= shamt			>> VMACHINE_INSTRUCTION_SHIFT_RS_2;
 
 	switch(opcode) {
 		case I_TYPE_JUMPER_INSTRUCTION:
 			if (funct_3 == INST_JALR_FUNCT_3) {
-				/* TO DO */
+				registers[rd] = pc + 4;
+				advances_pc((registers[rs1] + immediate1) & 0xfffffffe);
 			}
 		break;
 		case I_TYPE_LOAD_INSTRUCTIONS:
 			if (funct_3 == INST_LB_FUNCT_3) {
-				/* TO DO */
+				registers[rd] = icache_read(registers[rs1] + immediate1); 
 			}
 			else if (funct_3 == INST_LH_FUNCT_3) {
-				/* TO DO */
+				registers[rd] = icache_read(registers[rs1] + immediate1);
 			}
 			else if (funct_3 == INST_LW_FUNCT_3) {
-				/* TO DO */
+				registers[rd] = icache_read(registers[rs1] + immediate1);
 			}
 			else if (funct_3 == INST_LBU_FUNCT_3) {
-				/* TO DO */
+				registers[rd] = icache_read(registers[rs1] + immediate1);
 			}
 			else if (funct_3 == INST_LHU_FUNCT_3) {
-				/* TO DO */
+				registers[rd] = icache_read(registers[rs1] + immediate1);
 			}				
 		break;
 		case I_TYPE_REGISTERS_INSTRUCTIONS:
 			if (funct_3 == INST_ADDI_FUNCT_3) {
-				/* TO DO */
+				registers[rd] = registers[rs1] + immediate1;
 			}
 			else if (funct_3 == INST_SLTI_FUNCT_3) {
-				/* TO DO */
+				registers[rd] = (registers[rs1] < immediate1) ? 1 : 0;
 			}
 			else if (funct_3 == INST_SLTIU_FUNCT_3) {
-				/* TO DO */
+				registers[rd] = (registers[rs1] < immediate1) ? 1 : 0;
 			}
 			else if (funct_3 == INST_XORI_FUNCT_3) {
-				/* TO DO */
+				registers[rd] = registers[rs1] ^ immediate1;
 			}
 			else if (funct_3 == INST_ORI_FUNCT_3) {
-				/* TO DO */
+				registers[rd] = registers[rs1] | immediate1;
 			}
 			else if (funct_3 == INST_ANDI_FUNCT_3) {
-				/* TO DO */
+				registers[rd] = registers[rs1] & immediate1;
 			}
 			else if (funct_3 == INST_SLLI_FUNCT_3) {
-				/* TO DO */
+				registers[rd] = registers[rs1] << shamt;
 			}
 			else if (funct_3 == INST_SRLI_FUNCT_3) {
-				/* TO DO */
+				registers[rd] = registers[rs1] >> shamt;
 			}
 			else if (funct_3 == INST_SRAI_FUNCT_3) {
-				/* TO DO */
+				registers[rd] = registers[rs1] >> shamt;
 			}
 		break;
 		case I_TYPE_FENCE_INSTRUCTIONS:

@@ -113,5 +113,7 @@ pc | - | Contador de programa
 ### Links para continuar estudando
 * https://www.embarcados.com.br/fe310g-microcontrolador-open-source-estrutura-basica-risc-v/#:~:text=RISC%2DV%20%C3%A9%20uma%20ISA,e%20o%20MIPS16e)%20al%C3%A9m%20de
 * https://riscv.org/about/
+* https://www.ic.unicamp.br/~edson/disciplinas/mc404/2019-2s/ab/slides/mc404_07.introducao_riscv.pdf
+* http://www.cs.cornell.edu/courses/cs3410/2019sp/schedule/slides/06-cpu-notes-bw.pdf
 
 		
