@@ -251,13 +251,13 @@ void do_execute_S(uint32_t instruction) {
 
 		switch (funct_3) {
 			case INST_SB_FUNCT_3:
-				/* TO DO */
+				memory_write(registers[rs1] + immediate_1, registers[rs2]);
 			break;	
 			case INST_SH_FUNCT_3:
-				/* TO DO */
+				memory_write(registers[rs1] + immediate_1, registers[rs2]);
 			break;	
 			case INST_SW_FUNCT_3:
-				/* TO DO */
+				memory_write(registers[rs1] + immediate_1, registers[rs2]);
 			break;			
 			default:
 				error("Unknown instruction");
