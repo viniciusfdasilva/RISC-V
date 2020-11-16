@@ -199,7 +199,6 @@ void do_execute_I(uint32_t instruction) {
 		break;
 		case I_TYPE_FENCE_INSTRUCTIONS:
 			/* TO DO */
-		break;
 		case I_TYPE_CALL_BREAKPOINT_CRS_INSTRUCTIONS:
 			if (funct_3 == INST_ECALL_FUNCT_3) {
 				/* TO DO */
@@ -225,7 +224,6 @@ void do_execute_I(uint32_t instruction) {
 			if (funct_3 == INST_CSRRCI_FUNCT_3) {
 				/* TO DO */
 			}
-		break;
 		default:
 			error("Unknown instruction");
 		break;
