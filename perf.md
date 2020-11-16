@@ -17,16 +17,16 @@
 Comandos mais utilizados:
 
 
-![](Comandos_perf.png)
+![](https://github.com/DayaneCordeiro/RISC-V/blob/master/Imagens/Comandos_perf.png)
 
 
-![](Comandos_perf_2.png)
+![](https://github.com/DayaneCordeiro/RISC-V/blob/master/Imagens/Comandos_perf_2.png)
 
 
 ### Perf tools
 
 
-![Fonte: https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.slideshare.net%2Fbrendangregg%2Fvelocity-2015-linux-perf-tools&psig=AOvVaw3QbqpdDROslyhwFAQjUMud&ust=1605640275736000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPjsqKTih-0CFQAAAAAdAAAAABAR](perf_tools.jpg)
+![Fonte: https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.slideshare.net%2Fbrendangregg%2Fvelocity-2015-linux-perf-tools&psig=AOvVaw3QbqpdDROslyhwFAQjUMud&ust=1605640275736000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPjsqKTih-0CFQAAAAAdAAAAABAR](https://github.com/DayaneCordeiro/RISC-V/blob/master/Imagens/perf_tools.jpg)
 
 
 ### Fontes:
