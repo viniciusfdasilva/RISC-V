@@ -1,6 +1,6 @@
 # Informações sobre o perf
 
-* Ferramenta de análise de desempenho:
+* Ferramenta de análise de desempenho - recursos e as tarefas que eles nos permitem executar em um determinado período de tempo:
     * Contadores de desempenho de hardware;
     * Pontos de rastreamento - ftrace:
         * Rastreio de eventos de agendamento;
@@ -10,6 +10,8 @@
         * Rastreio de operações relacionadas a sistemas de arquivo e virtualização.
     * Contadores de desempenho em software;
 * O perf consiste em uma syscall feita através de um descritor de arquivos e uma região de memória mapeada.
+* O perf fornece acesso à Unidade de Monitoramento de Desempenho na CPU.
+* Além do monitoramento dos eventos, é possível criar relatórios com os dados coletados.
 
 ### Subcomandos
 Comandos mais utilizados:
@@ -35,3 +37,4 @@ Comandos mais utilizados:
 * https://en.wikipedia.org/wiki/File_descriptor
 * https://perf.wiki.kernel.org/index.php/Main_Page
 * https://perf.wiki.kernel.org/index.php/Tutorial
+* https://www.tecmint.com/perf-performance-monitoring-and-analysis-tool-for-linux/
