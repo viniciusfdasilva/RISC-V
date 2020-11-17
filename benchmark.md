@@ -3,8 +3,8 @@
 
 ### O que é benchmark
 Comparação de performance entre dispositivos, com inúmeros tipos de testes e análises de dados coletados. Existe dois tipos de testes que podem ser realizados com benchmarks:
-    * **Testes com benchmarks sintéticos:** utilização de programas que estimulam um certo tipo de comportamento desejado. Útil para análise em cenários mais específicos.
-    * **Testes com benchmarks de aplicação:** execução de testes mais próximos do que acontece no mundo real. Teste que consegue identificar a capacidade real do hardware/software.
+* **Testes com benchmarks sintéticos:** utilização de programas que estimulam um certo tipo de comportamento desejado. Útil para análise em cenários mais específicos.
+* **Testes com benchmarks de aplicação:** execução de testes mais próximos do que acontece no mundo real. Teste que consegue identificar a capacidade real do hardware/software.
 É aconselhável que no momento da execução dos testes, apenas a aplicação que está sendo testada esteja em execução para que outros aplicativos consumindo o hardware não comprometam os resultados obtidos.
 
 ### Benchmarks open source
