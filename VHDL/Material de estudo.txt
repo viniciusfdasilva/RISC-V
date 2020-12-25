@@ -1,2 +1,6 @@
-https://www.embarcados.com.br/vhdl-basico-parte-1-entidade/
+* https://www.embarcados.com.br/vhdl-basico-parte-1-entidade/
+
+* https://www.embarcados.com.br/vhdl-basico-parte-2-arquitetura/
+
+* https://www.youtube.com/watch?v=zwNbXQ8E3ng
 
