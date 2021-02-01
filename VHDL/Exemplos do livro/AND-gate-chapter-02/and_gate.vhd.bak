@@ -1,0 +1,11 @@
+-- AND gate example
+
+entity and2 is
+	port (a, b : in bit;
+			c    : out bit);
+end and2;
+
+architecture and2_behav of and2 is
+begin
+	c <= a and b after 5 ns;
+end and2_behav;

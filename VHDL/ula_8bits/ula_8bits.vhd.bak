@@ -1,0 +1,32 @@
+-- ULA de 8 bits com as instruções sub, add, and, or, not, xor, nand --
+-- add  - 000
+-- sub  - 001
+-- and  - 010
+-- or   - 011
+-- not  - 100
+-- xor  - 101
+-- nand - 110
+-- nor  - 111
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+
+entity ula_8bits is
+	port (
+		-- entradas --
+		inputA   : in std_logic_vector(7 downto 0);
+		inputB   : in std_logic_vector(7 downto 0);
+		carryIn  : in std_logic;
+		opcode   : in std_logic_vector(2 downto 0);
+		
+		-- saídas --
+		output   : out std_logic_vector(7 downto 0);
+		carryOut : out std_logic;
+	);
+end ula_8bits;
+
+architecture ula of ula_8bits is
+begin
+	-- TO DO --
+end ula;

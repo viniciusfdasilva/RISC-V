@@ -1,3 +1,5 @@
+Página de download dos itens: https://fpgasoftware.intel.com/?edition=lite/#tabs-2
+
 * https://www.embarcados.com.br/vhdl-basico-parte-1-entidade/
 
 * https://www.embarcados.com.br/vhdl-basico-parte-2-arquitetura/
