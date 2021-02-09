@@ -9,7 +9,7 @@ entity adder_1bit is
 		sum	   : out std_logic;
 		carryOut : out std_logic
 	);
-end adder_1bitorcrux1801  ;
+end adder_1bit;
 
 architecture adder_1bit of adder_1bit is
 begin
