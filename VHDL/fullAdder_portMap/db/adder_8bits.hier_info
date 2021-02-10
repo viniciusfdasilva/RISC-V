@@ -15,14 +15,14 @@ input2[4] => adder_1bit:Out4.input2
 input2[5] => adder_1bit:Out5.input2
 input2[6] => adder_1bit:Out6.input2
 input2[7] => adder_1bit:Out7.input2
-output[0] <= adder_1bit:Out0.sum
-output[1] <= adder_1bit:Out1.sum
-output[2] <= adder_1bit:Out2.sum
-output[3] <= adder_1bit:Out3.sum
-output[4] <= adder_1bit:Out4.sum
-output[5] <= adder_1bit:Out5.sum
-output[6] <= adder_1bit:Out6.sum
-output[7] <= adder_1bit:Out7.sum
+output[0] << adder_1bit:Out0.sum
+output[1] << adder_1bit:Out1.sum
+output[2] << adder_1bit:Out2.sum
+output[3] << adder_1bit:Out3.sum
+output[4] << adder_1bit:Out4.sum
+output[5] << adder_1bit:Out5.sum
+output[6] << adder_1bit:Out6.sum
+output[7] << adder_1bit:Out7.sum
 
 
 |adder_8bits|adder_1bit:Out0

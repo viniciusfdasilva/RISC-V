@@ -23,9 +23,9 @@ VgPXaSgKlnS5MDAazc??Mj2
 !s100 <OioIfG@izPlL]W=>[P:h1
 Z6 OV;C;2020.1;71
 31
-Z7 !s110 1612953717
+Z7 !s110 1612993416
 !i10b 1
-Z8 !s108 1612953717.000000
+Z8 !s108 1612993416.000000
 Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/adder_1bit.vhd|
 !s107 C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/adder_1bit.vhd|
 !i113 1
@@ -64,11 +64,11 @@ VNPIb=la97U@JDi?VG9D0X1
 !s100 U2GeR3CS4S30DQzPH63321
 R6
 31
-Z16 !s110 1612953716
+R7
 !i10b 1
-Z17 !s108 1612953716.000000
-Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/adder_8bits.vhd|
-Z19 !s107 C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/adder_8bits.vhd|
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/adder_8bits.vhd|
+Z17 !s107 C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/adder_8bits.vhd|
 !i113 1
 R10
 R11
@@ -83,11 +83,11 @@ V_<IQU@_^nK1KZTaZU^5E`0
 !s100 =YOoQE5Z=L=3IY^O;QKFX1
 R6
 31
-R16
+R7
 !i10b 1
+R8
+R16
 R17
-R18
-R19
 !i113 1
 R10
 R11

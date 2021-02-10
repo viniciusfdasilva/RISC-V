@@ -62,11 +62,7 @@ always : PROCESS
 -- (        )                                                 
 -- variable declarations                                      
 BEGIN                                                         
-        -- code executes for every event on sensitivity list
-	for i in 0 to 7 ** elements  loop
-		(input1, input2) <= std_logic_vector(i, 7);
-		wait for 10 ns;
-	end loop;
+        -- code executes for every event on sensitivity list  
 WAIT;                                                        
 END PROCESS always;                                          
 END adder_8bits_arch;

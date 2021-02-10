@@ -6,12 +6,17 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity adder_8bits
 -- Compiling architecture adder_8bits of adder_8bits
 
-} {} {}} C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/simulation/modelsim/adder_8bits.vht {1 {vcom -work work -2002 -explicit -stats=none C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/simulation/modelsim/adder_8bits.vht
+} {} {}} C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/simulation/modelsim/adder_8bits.vht {0 {vcom -work work -2002 -explicit -stats=none C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/simulation/modelsim/adder_8bits.vht
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Compiling entity adder_8bits_vhd_tst
 -- Compiling architecture adder_8bits_arch of adder_8bits_vhd_tst
+** Error: C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/simulation/modelsim/adder_8bits.vht(67): (vcom-1394) Type conversion operand must be a single expression that is not a range.
+** Error: C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/simulation/modelsim/adder_8bits.vht(67): Signal "input1" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+** Error: C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/simulation/modelsim/adder_8bits.vht(67): Signal "input2" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+** Error: C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/simulation/modelsim/adder_8bits.vht(67): (vcom-1583) Illegal type converson from 'std.STANDARD.INTEGER' to 'ieee.std_logic_1164.STD_LOGIC_VECTOR' (numeric to array).
+** Note: C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/simulation/modelsim/adder_8bits.vht(72): VHDL Compiler exiting
 
-} {} {}}
+} {8.0 12.0} {}}

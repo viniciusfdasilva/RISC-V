@@ -1,29 +1,36 @@
-vsim -gui -l msim_transcript work.adder_8bits
-# vsim -gui -l msim_transcript work.adder_8bits 
-# Start time: 07:43:33 on Feb 10,2021
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.adder_8bits(adder_8bits)
-# ** Warning: (vsim-3473) Component instance "Out0 : adder_1bit" is not bound.
-#    Time: 0 ps  Iteration: 0  Instance: /adder_8bits File: C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/adder_8bits.vhd
-# ** Warning: (vsim-3473) Component instance "Out1 : adder_1bit" is not bound.
-#    Time: 0 ps  Iteration: 0  Instance: /adder_8bits File: C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/adder_8bits.vhd
-# ** Warning: (vsim-3473) Component instance "Out2 : adder_1bit" is not bound.
-#    Time: 0 ps  Iteration: 0  Instance: /adder_8bits File: C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/adder_8bits.vhd
-# ** Warning: (vsim-3473) Component instance "Out3 : adder_1bit" is not bound.
-#    Time: 0 ps  Iteration: 0  Instance: /adder_8bits File: C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/adder_8bits.vhd
-# ** Warning: (vsim-3473) Component instance "Out4 : adder_1bit" is not bound.
-#    Time: 0 ps  Iteration: 0  Instance: /adder_8bits File: C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/adder_8bits.vhd
-# ** Warning: (vsim-3473) Component instance "Out5 : adder_1bit" is not bound.
-#    Time: 0 ps  Iteration: 0  Instance: /adder_8bits File: C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/adder_8bits.vhd
-# ** Warning: (vsim-3473) Component instance "Out6 : adder_1bit" is not bound.
-#    Time: 0 ps  Iteration: 0  Instance: /adder_8bits File: C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/adder_8bits.vhd
-# ** Warning: (vsim-3473) Component instance "Out7 : adder_1bit" is not bound.
-#    Time: 0 ps  Iteration: 0  Instance: /adder_8bits File: C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/adder_8bits.vhd
-add wave -position end  sim:/adder_8bits/input1
-add wave -position end  sim:/adder_8bits/input2
-add wave -position end  sim:/adder_8bits/output
-add wave -position end  sim:/adder_8bits/carry
-# End time: 08:06:41 on Feb 10,2021, Elapsed time: 0:23:08
-# Errors: 0, Warnings: 13
+# Reading pref.tcl
+# do adder_8bits_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/adder_8bits.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:43:36 on Feb 10,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/adder_8bits.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity adder_8bits
+# -- Compiling architecture adder_8bits of adder_8bits
+# End time: 18:43:36 on Feb 10,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/adder_1bit.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:43:36 on Feb 10,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/adder_1bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity adder_1bit
+# -- Compiling architecture adder_1bit of adder_1bit
+# End time: 18:43:36 on Feb 10,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# Loading project adder_8bits

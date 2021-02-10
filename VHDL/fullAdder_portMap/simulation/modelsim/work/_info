@@ -51,10 +51,10 @@ R10
 R11
 R12
 Eadder_8bits_vhd_tst
-Z13 w1612953409
+Z13 w1612993393
 R2
 R3
-!i122 1
+!i122 3
 R0
 Z14 8C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/simulation/modelsim/adder_8bits.vht
 Z15 FC:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/simulation/modelsim/adder_8bits.vht
@@ -64,11 +64,11 @@ VOBXR`<A[znB]V:53PZ72i3
 !s100 20dWM[]>I2zK^Mk1<`Z`^2
 R6
 32
-Z16 !s110 1612953778
+!s110 1612993452
 !i10b 1
-Z17 !s108 1612953778.000000
-Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/simulation/modelsim/adder_8bits.vht|
-!s107 C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/simulation/modelsim/adder_8bits.vht|
+!s108 1612993451.000000
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/simulation/modelsim/adder_8bits.vht|
+Z17 !s107 C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/simulation/modelsim/adder_8bits.vht|
 !i113 1
 R11
 R12
@@ -83,11 +83,11 @@ V0^G7DUOG3lGTU[9VhK1n>2
 !s100 ^d3Y`b?RE9?_@`YVmfdI41
 R6
 32
-R16
+!s110 1612953778
 !i10b 1
+!s108 1612953778.000000
+R16
 R17
-R18
-Z19 !s107 C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/simulation/modelsim/adder_8bits.vht|
 !i113 1
 R11
 R12
