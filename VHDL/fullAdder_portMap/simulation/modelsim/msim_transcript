@@ -1,0 +1,29 @@
+vsim -gui -l msim_transcript work.adder_8bits
+# vsim -gui -l msim_transcript work.adder_8bits 
+# Start time: 07:43:33 on Feb 10,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.adder_8bits(adder_8bits)
+# ** Warning: (vsim-3473) Component instance "Out0 : adder_1bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_8bits File: C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/adder_8bits.vhd
+# ** Warning: (vsim-3473) Component instance "Out1 : adder_1bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_8bits File: C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/adder_8bits.vhd
+# ** Warning: (vsim-3473) Component instance "Out2 : adder_1bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_8bits File: C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/adder_8bits.vhd
+# ** Warning: (vsim-3473) Component instance "Out3 : adder_1bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_8bits File: C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/adder_8bits.vhd
+# ** Warning: (vsim-3473) Component instance "Out4 : adder_1bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_8bits File: C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/adder_8bits.vhd
+# ** Warning: (vsim-3473) Component instance "Out5 : adder_1bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_8bits File: C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/adder_8bits.vhd
+# ** Warning: (vsim-3473) Component instance "Out6 : adder_1bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_8bits File: C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/adder_8bits.vhd
+# ** Warning: (vsim-3473) Component instance "Out7 : adder_1bit" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /adder_8bits File: C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/adder_8bits.vhd
+add wave -position end  sim:/adder_8bits/input1
+add wave -position end  sim:/adder_8bits/input2
+add wave -position end  sim:/adder_8bits/output
+add wave -position end  sim:/adder_8bits/carry
+# End time: 08:06:41 on Feb 10,2021, Elapsed time: 0:23:08
+# Errors: 0, Warnings: 13

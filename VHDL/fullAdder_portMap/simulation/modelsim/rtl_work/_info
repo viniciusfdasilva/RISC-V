@@ -1,0 +1,93 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/simulation/modelsim
+Eadder_1bit
+Z1 w1612953206
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 1
+R0
+Z4 8C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/adder_1bit.vhd
+Z5 FC:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/adder_1bit.vhd
+l0
+L4 1
+VgPXaSgKlnS5MDAazc??Mj2
+!s100 <OioIfG@izPlL]W=>[P:h1
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1612953717
+!i10b 1
+Z8 !s108 1612953717.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/adder_1bit.vhd|
+!s107 C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/adder_1bit.vhd|
+!i113 1
+Z10 o-93 -work work
+Z11 tExplicit 1 CvgOpt 0
+Aadder_1bit
+R2
+R3
+DEx4 work 10 adder_1bit 0 22 gPXaSgKlnS5MDAazc??Mj2
+!i122 1
+l15
+L14 5
+VS1eKoSGBm[]5f340>ES^n2
+!s100 n^_J6VI4LH5@Vc[zFQVBH1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+Z12 !s107 C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/adder_1bit.vhd|
+!i113 1
+R10
+R11
+Eadder_8bits
+Z13 w1612953186
+R2
+R3
+!i122 0
+R0
+Z14 8C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/adder_8bits.vhd
+Z15 FC:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/adder_8bits.vhd
+l0
+L6 1
+VNPIb=la97U@JDi?VG9D0X1
+!s100 U2GeR3CS4S30DQzPH63321
+R6
+31
+Z16 !s110 1612953716
+!i10b 1
+Z17 !s108 1612953716.000000
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/adder_8bits.vhd|
+Z19 !s107 C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/adder_8bits.vhd|
+!i113 1
+R10
+R11
+Aadder_8bits
+R2
+R3
+DEx4 work 11 adder_8bits 0 22 NPIb=la97U@JDi?VG9D0X1
+!i122 0
+l25
+L14 84
+V_<IQU@_^nK1KZTaZU^5E`0
+!s100 =YOoQE5Z=L=3IY^O;QKFX1
+R6
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R10
+R11
