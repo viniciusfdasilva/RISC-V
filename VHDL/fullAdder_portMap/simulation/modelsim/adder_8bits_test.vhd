@@ -63,7 +63,7 @@ always : PROCESS
 -- (        )                                                 
 -- variable declarations                                      
 BEGIN                                                         
-        -- code executes for every event on sensitivity list
+        -- code executes for every event on sensitivity list  
 	for i in 0 to 255 loop                              -- 256 addend values
 		input1 <= std_logic_vector(to_unsigned(i, 8));   -- apply i to input1
 		for j in 0 to 255 loop                           -- 256 augend values
@@ -77,3 +77,4 @@ BEGIN
 WAIT;                                                        
 END PROCESS always;                                          
 END adder_8bits_arch;
+

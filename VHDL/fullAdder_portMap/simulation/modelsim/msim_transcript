@@ -12,25 +12,145 @@
 # 
 # vcom -93 -work work {C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/adder_8bits.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:43:36 on Feb 10,2021
+# Start time: 08:01:04 on Feb 11,2021
 # vcom -reportprogress 300 -93 -work work C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/adder_8bits.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity adder_8bits
 # -- Compiling architecture adder_8bits of adder_8bits
-# End time: 18:43:36 on Feb 10,2021, Elapsed time: 0:00:00
+# End time: 08:01:04 on Feb 11,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/adder_1bit.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:43:36 on Feb 10,2021
+# Start time: 08:01:05 on Feb 11,2021
 # vcom -reportprogress 300 -93 -work work C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/adder_1bit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity adder_1bit
 # -- Compiling architecture adder_1bit of adder_1bit
-# End time: 18:43:36 on Feb 10,2021, Elapsed time: 0:00:00
+# End time: 08:01:05 on Feb 11,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# Loading project adder_8bits
+# vcom -93 -work work {C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/simulation/modelsim/adder_8bits.vht}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:01:05 on Feb 11,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/simulation/modelsim/adder_8bits.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity adder_8bits_vhd_tst
+# -- Compiling architecture adder_8bits_arch of adder_8bits_vhd_tst
+# ** Error: C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/simulation/modelsim/adder_8bits.vht(67): Illegal target for signal assignment.
+# ** Error: C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/simulation/modelsim/adder_8bits.vht(67): near "'": syntax error
+# ** Error: C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/simulation/modelsim/adder_8bits.vht(67): near "'": syntax error
+# ** Note: C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/simulation/modelsim/adder_8bits.vht(80): VHDL Compiler exiting
+# End time: 08:01:05 on Feb 11,2021, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./adder_8bits_run_msim_rtl_vhdl.do line 11
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/simulation/modelsim/adder_8bits.vht}"
+vcom -93 -work work C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/adder_1bit.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:02:00 on Feb 11,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/adder_1bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity adder_1bit
+# -- Compiling architecture adder_1bit of adder_1bit
+# End time: 08:02:00 on Feb 11,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -93 -work work C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/adder_8bits.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:02:00 on Feb 11,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/adder_8bits.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity adder_8bits
+# -- Compiling architecture adder_8bits of adder_8bits
+# End time: 08:02:00 on Feb 11,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -93 -work work C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/simulation/modelsim/adder_8bits.vht
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:02:00 on Feb 11,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/simulation/modelsim/adder_8bits.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity adder_8bits_vhd_tst
+# -- Compiling architecture adder_8bits_arch of adder_8bits_vhd_tst
+# ** Error: C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/simulation/modelsim/adder_8bits.vht(67): Illegal target for signal assignment.
+# ** Error: C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/simulation/modelsim/adder_8bits.vht(67): near "'": syntax error
+# ** Error: C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/simulation/modelsim/adder_8bits.vht(67): near "'": syntax error
+# ** Note: C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/simulation/modelsim/adder_8bits.vht(80): VHDL Compiler exiting
+# End time: 08:02:00 on Feb 11,2021, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+vcom -93 -work work C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/adder_1bit.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:02:32 on Feb 11,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/adder_1bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity adder_1bit
+# -- Compiling architecture adder_1bit of adder_1bit
+# End time: 08:02:32 on Feb 11,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -93 -work work C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/adder_8bits.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:02:32 on Feb 11,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/adder_8bits.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity adder_8bits
+# -- Compiling architecture adder_8bits of adder_8bits
+# End time: 08:02:32 on Feb 11,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -93 -work work C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/simulation/modelsim/adder_8bits.vht
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:02:32 on Feb 11,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/simulation/modelsim/adder_8bits.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity adder_8bits_vhd_tst
+# -- Compiling architecture adder_8bits_arch of adder_8bits_vhd_tst
+# End time: 08:02:32 on Feb 11,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui -l msim_transcript work.adder_8bits_vhd_tst
+# vsim -gui -l msim_transcript work.adder_8bits_vhd_tst 
+# Start time: 08:03:07 on Feb 11,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.adder_8bits_vhd_tst(adder_8bits_arch)
+# Loading work.adder_8bits(adder_8bits)
+# Loading work.adder_1bit(adder_1bit)
+add wave -position end  sim:/adder_8bits_vhd_tst/input1
+add wave -position end  sim:/adder_8bits_vhd_tst/input2
+add wave -position end  sim:/adder_8bits_vhd_tst/output
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 08:04:05 on Feb 11,2021, Elapsed time: 0:00:58
+# Errors: 0, Warnings: 0
