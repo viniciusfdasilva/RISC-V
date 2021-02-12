@@ -1,0 +1,204 @@
+|subtractor_8bits
+input1[0] => subtractor_1bit:Out0.input1
+input1[1] => subtractor_1bit:Out1.input1
+input1[2] => subtractor_1bit:Out2.input1
+input1[3] => subtractor_1bit:Out3.input1
+input1[4] => subtractor_1bit:Out4.input1
+input1[5] => subtractor_1bit:Out5.input1
+input1[6] => subtractor_1bit:Out6.input1
+input1[7] => subtractor_1bit:Out7.input1
+input2[0] => subtractor_1bit:Out0.input2
+input2[1] => subtractor_1bit:Out1.input2
+input2[2] => subtractor_1bit:Out2.input2
+input2[3] => subtractor_1bit:Out3.input2
+input2[4] => subtractor_1bit:Out4.input2
+input2[5] => subtractor_1bit:Out5.input2
+input2[6] => subtractor_1bit:Out6.input2
+input2[7] => subtractor_1bit:Out7.input2
+carryIn[0] => ~NO_FANOUT~
+carryIn[1] => ~NO_FANOUT~
+carryIn[2] => ~NO_FANOUT~
+carryIn[3] => ~NO_FANOUT~
+carryIn[4] => ~NO_FANOUT~
+carryIn[5] => ~NO_FANOUT~
+carryIn[6] => ~NO_FANOUT~
+carryIn[7] => ~NO_FANOUT~
+output[0] << subtractor_1bit:Out0.subtract
+output[1] << subtractor_1bit:Out1.subtract
+output[2] << subtractor_1bit:Out2.subtract
+output[3] << subtractor_1bit:Out3.subtract
+output[4] << subtractor_1bit:Out4.subtract
+output[5] << subtractor_1bit:Out5.subtract
+output[6] << subtractor_1bit:Out6.subtract
+output[7] << subtractor_1bit:Out7.subtract
+carryOut << subtractor_1bit:Out7.carryOut
+
+
+|subtractor_8bits|subtractor_1bit:Out0
+input1 => subtract.IN0
+input1 => subtract.IN0
+input1 => carryOut.IN0
+input1 => carryOut.IN0
+input1 => subtract.IN0
+input2 => subtract.IN1
+input2 => carryOut.IN1
+input2 => carryOut.IN0
+input2 => subtract.IN1
+input2 => subtract.IN1
+input2 => subtract.IN1
+carryIn => subtract.IN1
+carryIn => subtract.IN1
+carryIn => carryOut.IN1
+carryIn => carryOut.IN1
+carryIn => subtract.IN1
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+subtract <= subtract.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|subtractor_8bits|subtractor_1bit:Out1
+input1 => subtract.IN0
+input1 => subtract.IN0
+input1 => carryOut.IN0
+input1 => carryOut.IN0
+input1 => subtract.IN0
+input2 => subtract.IN1
+input2 => carryOut.IN1
+input2 => carryOut.IN0
+input2 => subtract.IN1
+input2 => subtract.IN1
+input2 => subtract.IN1
+carryIn => subtract.IN1
+carryIn => subtract.IN1
+carryIn => carryOut.IN1
+carryIn => carryOut.IN1
+carryIn => subtract.IN1
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+subtract <= subtract.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|subtractor_8bits|subtractor_1bit:Out2
+input1 => subtract.IN0
+input1 => subtract.IN0
+input1 => carryOut.IN0
+input1 => carryOut.IN0
+input1 => subtract.IN0
+input2 => subtract.IN1
+input2 => carryOut.IN1
+input2 => carryOut.IN0
+input2 => subtract.IN1
+input2 => subtract.IN1
+input2 => subtract.IN1
+carryIn => subtract.IN1
+carryIn => subtract.IN1
+carryIn => carryOut.IN1
+carryIn => carryOut.IN1
+carryIn => subtract.IN1
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+subtract <= subtract.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|subtractor_8bits|subtractor_1bit:Out3
+input1 => subtract.IN0
+input1 => subtract.IN0
+input1 => carryOut.IN0
+input1 => carryOut.IN0
+input1 => subtract.IN0
+input2 => subtract.IN1
+input2 => carryOut.IN1
+input2 => carryOut.IN0
+input2 => subtract.IN1
+input2 => subtract.IN1
+input2 => subtract.IN1
+carryIn => subtract.IN1
+carryIn => subtract.IN1
+carryIn => carryOut.IN1
+carryIn => carryOut.IN1
+carryIn => subtract.IN1
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+subtract <= subtract.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|subtractor_8bits|subtractor_1bit:Out4
+input1 => subtract.IN0
+input1 => subtract.IN0
+input1 => carryOut.IN0
+input1 => carryOut.IN0
+input1 => subtract.IN0
+input2 => subtract.IN1
+input2 => carryOut.IN1
+input2 => carryOut.IN0
+input2 => subtract.IN1
+input2 => subtract.IN1
+input2 => subtract.IN1
+carryIn => subtract.IN1
+carryIn => subtract.IN1
+carryIn => carryOut.IN1
+carryIn => carryOut.IN1
+carryIn => subtract.IN1
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+subtract <= subtract.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|subtractor_8bits|subtractor_1bit:Out5
+input1 => subtract.IN0
+input1 => subtract.IN0
+input1 => carryOut.IN0
+input1 => carryOut.IN0
+input1 => subtract.IN0
+input2 => subtract.IN1
+input2 => carryOut.IN1
+input2 => carryOut.IN0
+input2 => subtract.IN1
+input2 => subtract.IN1
+input2 => subtract.IN1
+carryIn => subtract.IN1
+carryIn => subtract.IN1
+carryIn => carryOut.IN1
+carryIn => carryOut.IN1
+carryIn => subtract.IN1
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+subtract <= subtract.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|subtractor_8bits|subtractor_1bit:Out6
+input1 => subtract.IN0
+input1 => subtract.IN0
+input1 => carryOut.IN0
+input1 => carryOut.IN0
+input1 => subtract.IN0
+input2 => subtract.IN1
+input2 => carryOut.IN1
+input2 => carryOut.IN0
+input2 => subtract.IN1
+input2 => subtract.IN1
+input2 => subtract.IN1
+carryIn => subtract.IN1
+carryIn => subtract.IN1
+carryIn => carryOut.IN1
+carryIn => carryOut.IN1
+carryIn => subtract.IN1
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+subtract <= subtract.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|subtractor_8bits|subtractor_1bit:Out7
+input1 => subtract.IN0
+input1 => subtract.IN0
+input1 => carryOut.IN0
+input1 => carryOut.IN0
+input1 => subtract.IN0
+input2 => subtract.IN1
+input2 => carryOut.IN1
+input2 => carryOut.IN0
+input2 => subtract.IN1
+input2 => subtract.IN1
+input2 => subtract.IN1
+carryIn => subtract.IN1
+carryIn => subtract.IN1
+carryIn => carryOut.IN1
+carryIn => carryOut.IN1
+carryIn => subtract.IN1
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+subtract <= subtract.DB_MAX_OUTPUT_PORT_TYPE
+
+
