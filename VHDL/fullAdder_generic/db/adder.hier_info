@@ -1,0 +1,117 @@
+|adder
+a[0] => adder_1bit:gen:0:s.a
+a[1] => adder_1bit:gen:1:s.a
+a[2] => adder_1bit:gen:2:s.a
+a[3] => adder_1bit:gen:3:s.a
+a[4] => adder_1bit:gen:4:s.a
+a[5] => adder_1bit:gen:5:s.a
+a[6] => adder_1bit:gen:6:s.a
+a[7] => adder_1bit:gen:7:s.a
+b[0] => adder_1bit:gen:0:s.b
+b[1] => adder_1bit:gen:1:s.b
+b[2] => adder_1bit:gen:2:s.b
+b[3] => adder_1bit:gen:3:s.b
+b[4] => adder_1bit:gen:4:s.b
+b[5] => adder_1bit:gen:5:s.b
+b[6] => adder_1bit:gen:6:s.b
+b[7] => adder_1bit:gen:7:s.b
+cin => ~NO_FANOUT~
+sum[0] <= adder_1bit:gen:0:s.sum
+sum[1] <= adder_1bit:gen:1:s.sum
+sum[2] <= adder_1bit:gen:2:s.sum
+sum[3] <= adder_1bit:gen:3:s.sum
+sum[4] <= adder_1bit:gen:4:s.sum
+sum[5] <= adder_1bit:gen:5:s.sum
+sum[6] <= adder_1bit:gen:6:s.sum
+sum[7] <= adder_1bit:gen:7:s.sum
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder|adder_1bit:\gen:0:s
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+cin => sum.IN1
+cin => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder|adder_1bit:\gen:1:s
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+cin => sum.IN1
+cin => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder|adder_1bit:\gen:2:s
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+cin => sum.IN1
+cin => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder|adder_1bit:\gen:3:s
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+cin => sum.IN1
+cin => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder|adder_1bit:\gen:4:s
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+cin => sum.IN1
+cin => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder|adder_1bit:\gen:5:s
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+cin => sum.IN1
+cin => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder|adder_1bit:\gen:6:s
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+cin => sum.IN1
+cin => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder|adder_1bit:\gen:7:s
+a => sum.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+cin => sum.IN1
+cin => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+

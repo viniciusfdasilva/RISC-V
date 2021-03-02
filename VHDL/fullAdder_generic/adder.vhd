@@ -2,15 +2,15 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 entity adder is
-	generic (n : integer); -- um valor n qualquer
+	generic (n : integer := 8); -- um valor n qualquer
 	port (
 		-- entradas
-		a    : in std_logic_vector(n downto 0);
-		b    : in std_logic_vector(n downto 0);
+		a    : in std_logic_vector((n - 1) downto 0);
+		b    : in std_logic_vector((n - 1) downto 0);
 		cin  : in std_logic;
 		
 		-- saídas
-		sum  : out std_logic_vector(n downto 0);
+		sum  : out std_logic_vector((n - 1) downto 0);
 		cout : out std_logic
 	);
 end adder;
@@ -28,18 +28,22 @@ architecture adder of adder is
 	end component;
 	
 	-- sinal local de carry
-	signal carry : std_logic_vector(0 to n);
+	signal carry : std_logic_vector(0 to (n - 1));
 begin
-	carry(0) <= cin;
-	cout <= carry(n);
+	--carry(0) <= cin;
+	--cout <= carry(n - 1);
 	
 	-- instancia de um single-bit adder n vezes
-	gen: for i in 1 to n generate
-	s  : adder_1bit port map (
+	gen: for i in 0 to (n - 1) generate
+	s  : adder_1bit 
+	--generic map (
+	--	n => 8
+	--)	
+	port map (
 		a => a(i),
 		b => b(i),
-		cin => carry(i - 1),
-		sum => sum(n),
+		cin => carry(i),
+		sum => sum(i),
 		cout => carry(i)
 	);
 	end generate;

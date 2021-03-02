@@ -1,5 +1,5 @@
 Analysis & Synthesis report for adder
-Fri Feb 12 18:47:51 2021
+Tue Mar 02 07:28:47 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -10,7 +10,15 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Logic Cells Representing Combinational Loops
+  9. General Register Statistics
+ 10. Parameter Settings for User Entity Instance: Top-level Entity: |adder
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -34,22 +42,27 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+---------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                              ;
-+-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Fri Feb 12 18:47:51 2021           ;
-; Quartus Prime Version       ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
-; Revision Name               ; adder                                       ;
-; Top-level Entity Name       ; adder                                       ;
-; Family                      ; Cyclone V                                   ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
-; Total registers             ; N/A until Partition Merge                   ;
-; Total pins                  ; N/A until Partition Merge                   ;
-; Total virtual pins          ; N/A until Partition Merge                   ;
-; Total block memory bits     ; N/A until Partition Merge                   ;
-; Total PLLs                  ; N/A until Partition Merge                   ;
-; Total DLLs                  ; N/A until Partition Merge                   ;
-+-----------------------------+---------------------------------------------+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Tue Mar 02 07:28:47 2021       ;
+; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                   ; adder                                       ;
+; Top-level Entity Name           ; adder                                       ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 0                                           ;
+; Total pins                      ; 26                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -155,13 +168,136 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                           ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                    ; Library ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------+---------+
+; adder.vhd                        ; yes             ; User VHDL File  ; C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_generic/adder.vhd      ;         ;
+; adder_1bit.vhd                   ; yes             ; User VHDL File  ; C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_generic/adder_1bit.vhd ;         ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------+---------+
+
+
++------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                            ;
++---------------------------------------------+--------------------------+
+; Resource                                    ; Usage                    ;
++---------------------------------------------+--------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 8                        ;
+;                                             ;                          ;
+; Combinational ALUT usage for logic          ; 16                       ;
+;     -- 7 input functions                    ; 0                        ;
+;     -- 6 input functions                    ; 0                        ;
+;     -- 5 input functions                    ; 0                        ;
+;     -- 4 input functions                    ; 0                        ;
+;     -- <=3 input functions                  ; 16                       ;
+;                                             ;                          ;
+; Dedicated logic registers                   ; 0                        ;
+;                                             ;                          ;
+; I/O pins                                    ; 26                       ;
+;                                             ;                          ;
+; Total DSP Blocks                            ; 0                        ;
+;                                             ;                          ;
+; Maximum fan-out node                        ; adder_1bit:\gen:0:s|cout ;
+; Maximum fan-out                             ; 2                        ;
+; Total fan-out                               ; 82                       ;
+; Average fan-out                             ; 1.21                     ;
++---------------------------------------------+--------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                           ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name        ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------+-------------+--------------+
+; |adder                     ; 16 (0)              ; 0 (0)                     ; 0                 ; 0          ; 26   ; 0            ; |adder                     ; adder       ; work         ;
+;    |adder_1bit:\gen:0:s|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adder|adder_1bit:\gen:0:s ; adder_1bit  ; work         ;
+;    |adder_1bit:\gen:1:s|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adder|adder_1bit:\gen:1:s ; adder_1bit  ; work         ;
+;    |adder_1bit:\gen:2:s|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adder|adder_1bit:\gen:2:s ; adder_1bit  ; work         ;
+;    |adder_1bit:\gen:3:s|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adder|adder_1bit:\gen:3:s ; adder_1bit  ; work         ;
+;    |adder_1bit:\gen:4:s|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adder|adder_1bit:\gen:4:s ; adder_1bit  ; work         ;
+;    |adder_1bit:\gen:5:s|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adder|adder_1bit:\gen:5:s ; adder_1bit  ; work         ;
+;    |adder_1bit:\gen:6:s|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adder|adder_1bit:\gen:6:s ; adder_1bit  ; work         ;
+;    |adder_1bit:\gen:7:s|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adder|adder_1bit:\gen:7:s ; adder_1bit  ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------------+
+; Logic Cells Representing Combinational Loops               ;
++--------------------------------------------------------+---+
+; Logic Cell Name                                        ;   ;
++--------------------------------------------------------+---+
+; adder_1bit:\gen:0:s|cout~0                             ;   ;
+; adder_1bit:\gen:1:s|cout~0                             ;   ;
+; adder_1bit:\gen:2:s|cout~0                             ;   ;
+; adder_1bit:\gen:3:s|cout~0                             ;   ;
+; adder_1bit:\gen:4:s|cout~0                             ;   ;
+; adder_1bit:\gen:5:s|cout~0                             ;   ;
+; adder_1bit:\gen:6:s|cout~0                             ;   ;
+; adder_1bit:\gen:7:s|cout~0                             ;   ;
+; Number of logic cells representing combinational loops ; 8 ;
++--------------------------------------------------------+---+
+Note: All cells listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |adder ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; n              ; 8     ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_lcell_comb     ; 17                          ;
+;     normal            ; 17                          ;
+;         0 data inputs ; 1                           ;
+;         3 data inputs ; 16                          ;
+; boundary_port         ; 26                          ;
+;                       ;                             ;
+; Max LUT depth         ; 1.00                        ;
+; Average LUT depth     ; 0.98                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Fri Feb 12 18:47:44 2021
+    Info: Processing started: Tue Mar 02 07:28:38 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off adder -c adder
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -172,12 +308,23 @@ Info (12021): Found 2 design units, including 1 entities, in source file adder_1
     Info (12022): Found design unit 1: adder_1bit-adder_1bit File: C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_generic/adder_1bit.vhd Line: 14
     Info (12023): Found entity 1: adder_1bit File: C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_generic/adder_1bit.vhd Line: 4
 Info (12127): Elaborating entity "adder" for the top level hierarchy
-Error (10346): VHDL error at adder.vhd(4): formal port or parameter "n" must have actual or default value File: C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_generic/adder.vhd Line: 4
-Error (12153): Can't elaborate top-level user hierarchy
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 1 warning
-    Error: Peak virtual memory: 4833 megabytes
-    Error: Processing ended: Fri Feb 12 18:47:51 2021
-    Error: Elapsed time: 00:00:07
-    Error: Total CPU time (on all processors): 00:00:17
+Warning (10541): VHDL Signal Declaration warning at adder.vhd(14): used implicit default value for signal "cout" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_generic/adder.vhd Line: 14
+Info (12128): Elaborating entity "adder_1bit" for hierarchy "adder_1bit:\gen:0:s" File: C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_generic/adder.vhd Line: 38
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "cout" is stuck at GND File: C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_generic/adder.vhd Line: 14
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "cin" File: C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_generic/adder.vhd Line: 10
+Info (21057): Implemented 42 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 17 input pins
+    Info (21059): Implemented 9 output pins
+    Info (21061): Implemented 16 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 4839 megabytes
+    Info: Processing ended: Tue Mar 02 07:28:47 2021
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:16
 
 
