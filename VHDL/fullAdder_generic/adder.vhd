@@ -28,23 +28,20 @@ architecture adder of adder is
 	end component;
 	
 	-- sinal local de carry
-	signal carry : std_logic_vector(0 to (n - 1));
+signal carry : std_logic_vector(n downto 0);
 begin
-	--carry(0) <= cin;
-	--cout <= carry(n - 1);
+	carry(0) <= '0';
 	
 	-- instancia de um single-bit adder n vezes
-	gen: for i in 0 to (n - 1) generate
-	s  : adder_1bit 
-	--generic map (
-	--	n => 8
-	--)	
+	gen: for i in 0 to (n - 1) generate -- i = 0
+	
+	s  : adder_1bit	
 	port map (
 		a => a(i),
 		b => b(i),
 		cin => carry(i),
 		sum => sum(i),
-		cout => carry(i)
+		cout => carry(i + 1)
 	);
 	end generate;
 end adder;

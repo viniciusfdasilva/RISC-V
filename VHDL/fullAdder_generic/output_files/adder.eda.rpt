@@ -1,5 +1,5 @@
 EDA Netlist Writer report for adder
-Tue Mar 02 07:39:28 2021
+Wed Mar 17 19:07:30 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -35,7 +35,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Tue Mar 02 07:39:28 2021 ;
+; EDA Netlist Writer Status ; Successful - Wed Mar 17 19:07:30 2021 ;
 ; Revision Name             ; adder                                 ;
 ; Top-level Entity Name     ; adder                                 ;
 ; Family                    ; Cyclone V                             ;
@@ -48,15 +48,15 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Mar 02 07:39:28 2021
+    Info: Processing started: Wed Mar 17 19:07:29 2021
 Info: Command: quartus_eda --read_settings_files=on --write_settings_files=off adder -c adder --gen_testbench
 Info (119006): Selected device 5CEBA4F23C7 for design "adder"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (201002): Generated VHDL Test Bench File C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_generic/simulation/modelsim/adder.vht for simulation
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4710 megabytes
-    Info: Processing ended: Tue Mar 02 07:39:28 2021
-    Info: Elapsed time: 00:00:00
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 4707 megabytes
+    Info: Processing ended: Wed Mar 17 19:07:30 2021
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
 
 

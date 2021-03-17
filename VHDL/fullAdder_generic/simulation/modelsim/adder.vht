@@ -18,7 +18,7 @@
 -- suit user's needs .Comments are provided in each section to help the user  
 -- fill out necessary details.                                                
 -- ***************************************************************************
--- Generated on "03/02/2021 07:39:28"
+-- Generated on "03/17/2021 19:07:30"
                                                             
 -- Vhdl Test Bench template for design  :  adder
 -- 
