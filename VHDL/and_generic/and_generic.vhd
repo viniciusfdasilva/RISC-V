@@ -14,7 +14,7 @@ entity and_generic is
 end and_generic;
 
 architecture and_generic of and_generic is
-	component
+	component and_1bit
 		port(
 			a : in std_logic;
 			b : in std_logic;
