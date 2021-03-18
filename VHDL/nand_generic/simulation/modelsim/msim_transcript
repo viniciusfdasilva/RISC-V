@@ -110,3 +110,5 @@ add wave -position end  sim:/nand_generic_vhd_tst/output
 force -freeze sim:/nand_generic_vhd_tst/a 00000001 0
 force -freeze sim:/nand_generic_vhd_tst/b 00000001 0
 run
+# End time: 07:51:00 on Mar 18,2021, Elapsed time: 0:06:33
+# Errors: 1, Warnings: 0
