@@ -1,5 +1,5 @@
 library ieee;
-use ieee.std_logic_vector.all;
+use ieee.std_logic_1164.all;
 
 entity nor_1bit is
 	port(

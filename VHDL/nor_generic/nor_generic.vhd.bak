@@ -1,5 +1,5 @@
 library ieee;
-use ieee.std_logic_1164.all;
+use ieee.std_logic_vector.all;
 
 entity nor_generic is
 	generic (n : integer := 8);
@@ -8,7 +8,7 @@ entity nor_generic is
 		a : in std_logic_vector((n -1) downto 0);
 		b : in std_logic_vector((n -1) downto 0);
 		-- outputs
-		output : out std_logic_vector((n -1) downto 0)
+		output : in std_logic_vector((n -1) downto 0)
 	);
 end nor_generic;
 
