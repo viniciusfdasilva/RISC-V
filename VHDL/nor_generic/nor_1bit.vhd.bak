@@ -12,6 +12,5 @@ entity nor_1bit is
 end nor_1bit;
 
 architecture nor_1bit of nor_1bit is
-begin
 	output <= a nor b;
 end nor_1bit;
