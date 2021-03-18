@@ -1,5 +1,5 @@
 Flow report for nand
-Thu Mar 18 07:39:10 2021
+Thu Mar 18 07:44:02 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Thu Mar 18 07:39:10 2021       ;
+; Flow Status                     ; Successful - Thu Mar 18 07:44:02 2021       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; nand                                        ;
 ; Top-level Entity Name           ; nand_generic                                ;
@@ -68,28 +68,37 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/18/2021 07:39:01 ;
+; Start date & time ; 03/18/2021 07:43:53 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; nand                ;
 +-------------------+---------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                         ;
-+-------------------------------------+----------------------------------------+---------------+--------------+------------+
-; Assignment Name                     ; Value                                  ; Default Value ; Entity Name  ; Section Id ;
-+-------------------------------------+----------------------------------------+---------------+--------------+------------+
-; COMPILER_SIGNATURE_ID               ; 102037075759539.161606394103140        ; --            ; --           ; --         ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --           ; --         ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --           ; --         ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; nand_generic ; Top        ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; nand_generic ; Top        ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; nand_generic ; Top        ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --           ; --         ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --           ; --         ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --           ; --         ;
-; TOP_LEVEL_ENTITY                    ; nand_generic                           ; nand          ; --           ; --         ;
-+-------------------------------------+----------------------------------------+---------------+--------------+------------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                              ;
++--------------------------------------+----------------------------------------+---------------+--------------+----------------+
+; Assignment Name                      ; Value                                  ; Default Value ; Entity Name  ; Section Id     ;
++--------------------------------------+----------------------------------------+---------------+--------------+----------------+
+; COMPILER_SIGNATURE_ID                ; 102037075759539.161606423314924        ; --            ; --           ; --             ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --           ; nand_test      ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; nand_test                              ; --            ; --           ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                                   ; --            ; --           ; eda_simulation ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (VHDL)                 ; <None>        ; --           ; --             ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --           ; eda_simulation ;
+; EDA_TEST_BENCH_FILE                  ; simulation/modelsim/nand_generic.vht   ; --            ; --           ; nand_test      ;
+; EDA_TEST_BENCH_MODULE_NAME           ; nand_test                              ; --            ; --           ; nand_test      ;
+; EDA_TEST_BENCH_NAME                  ; nand_test                              ; --            ; --           ; eda_simulation ;
+; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --           ; eda_simulation ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --           ; --             ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --           ; --             ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; nand_generic ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; nand_generic ; Top            ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; nand_generic ; Top            ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --            ; --           ; --             ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --           ; --             ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --           ; --             ;
+; TOP_LEVEL_ENTITY                     ; nand_generic                           ; nand          ; --           ; --             ;
++--------------------------------------+----------------------------------------+---------------+--------------+----------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -97,8 +106,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4850 MB             ; 00:00:19                           ;
-; Total                ; 00:00:09     ; --                      ; --                  ; 00:00:19                           ;
+; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 4842 MB             ; 00:00:19                           ;
+; Total                ; 00:00:08     ; --                      ; --                  ; 00:00:19                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -15,14 +15,14 @@ b[4] => nand_1bit:gen:4:s.b
 b[5] => nand_1bit:gen:5:s.b
 b[6] => nand_1bit:gen:6:s.b
 b[7] => nand_1bit:gen:7:s.b
-output[0] <= nand_1bit:gen:0:s.output
-output[1] <= nand_1bit:gen:1:s.output
-output[2] <= nand_1bit:gen:2:s.output
-output[3] <= nand_1bit:gen:3:s.output
-output[4] <= nand_1bit:gen:4:s.output
-output[5] <= nand_1bit:gen:5:s.output
-output[6] <= nand_1bit:gen:6:s.output
-output[7] <= nand_1bit:gen:7:s.output
+output[0] << nand_1bit:gen:0:s.output
+output[1] << nand_1bit:gen:1:s.output
+output[2] << nand_1bit:gen:2:s.output
+output[3] << nand_1bit:gen:3:s.output
+output[4] << nand_1bit:gen:4:s.output
+output[5] << nand_1bit:gen:5:s.output
+output[6] << nand_1bit:gen:6:s.output
+output[7] << nand_1bit:gen:7:s.output
 
 
 |nand_generic|nand_1bit:\gen:0:s
