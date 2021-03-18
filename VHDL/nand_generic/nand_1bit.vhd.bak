@@ -8,7 +8,7 @@ entity nand_1bit is
 		b : in std_logic;
 		
 		-- outputs
-		output : out std_logic
+		output : out std_logic;
 	);
 end nand_1bit;
 
