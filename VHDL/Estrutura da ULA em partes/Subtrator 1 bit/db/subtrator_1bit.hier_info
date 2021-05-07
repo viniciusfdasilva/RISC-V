@@ -1,0 +1,21 @@
+|subtrator_1bit
+a => subtracao.IN0
+a => subtracao.IN0
+a => subtracao.IN0
+a => subtracao.IN0
+b => subtracao.IN1
+b => subtracao.IN1
+b => subtracao.IN1
+b => subtracao.IN1
+carryIn => subtracao.IN1
+carryIn => subtracao.IN1
+carryIn => subtracao.IN1
+carryIn => subtracao.IN1
+carryIn => subtracao.IN1
+carryIn => subtracao.IN1
+carryIn => subtracao.IN1
+carryIn => subtracao.IN1
+subtracao <= subtracao$latch.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

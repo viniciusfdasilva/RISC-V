@@ -1,0 +1,14 @@
+|Teste2
+entradaA => saidaE.IN0
+entradaA => saidaD.IN0
+entradaA => saidaD.IN0
+entradaB => saidaD.IN1
+entradaB => saidaD.IN0
+entradaB => saidaE.IN1
+entradaC => saidaD.IN1
+entradaC => saidaD.IN1
+entradaC => saidaE.IN1
+saidaD << saidaD.DB_MAX_OUTPUT_PORT_TYPE
+saidaE << saidaE.DB_MAX_OUTPUT_PORT_TYPE
+
+

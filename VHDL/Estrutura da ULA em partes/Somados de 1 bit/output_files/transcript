@@ -1,0 +1,173 @@
+# do temp_simlib_comp.tmp
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:47:01 on Jan 25,2021
+# vlog -work cyclonev -vlog01compat c:/intelfpga_lite/20.1/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v 
+# ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
+# ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
+# 
+# Top level modules:
+# End time: 18:47:03 on Jan 25,2021, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 10
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:47:03 on Jan 25,2021
+# vcom -work cyclonev -93 c:/intelfpga_lite/20.1/quartus/eda/sim_lib/cyclonev_atoms.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Compiling package cyclonev_atom_pack
+# -- Compiling package body cyclonev_atom_pack
+# -- Loading package cyclonev_atom_pack
+# -- Compiling package cyclonev_pllpack
+# -- Compiling package body cyclonev_pllpack
+# -- Loading package cyclonev_pllpack
+# -- Loading package cyclonev_atom_pack
+# -- Compiling entity cyclonev_dffe
+# -- Compiling architecture behave of cyclonev_dffe
+# -- Compiling entity cyclonev_mux21
+# -- Compiling architecture AltVITAL of cyclonev_mux21
+# -- Compiling entity cyclonev_mux41
+# -- Compiling architecture AltVITAL of cyclonev_mux41
+# -- Compiling entity cyclonev_and1
+# -- Compiling architecture AltVITAL of cyclonev_and1
+# -- Loading entity cyclonev_and1
+# -- Compiling entity cyclonev_ff
+# -- Compiling architecture vital_lcell_ff of cyclonev_ff
+# -- Loading package std_logic_arith
+# -- Compiling entity cyclonev_pseudo_diff_out
+# -- Compiling architecture arch of cyclonev_pseudo_diff_out
+# -- Compiling entity cyclonev_lcell_comb
+# -- Compiling architecture vital_lcell_comb of cyclonev_lcell_comb
+# -- Compiling entity cyclonev_routing_wire
+# ** Warning: c:/intelfpga_lite/20.1/quartus/eda/sim_lib/cyclonev_atoms.vhd(2331): (vcom-1288) VITAL timing generic "tpd_datainglitch_dataout" port specification "datainglitch" does not denote a port.
+# (1076.4 section 4.3.2.1.3)
+# -- Compiling architecture behave of cyclonev_routing_wire
+# -- Loading package altera_lnsim_components
+# -- Compiling entity cyclonev_ram_block
+# -- Compiling architecture block_arch of cyclonev_ram_block
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity cyclonev_mlab_cell
+# -- Compiling architecture trans of cyclonev_mlab_cell
+# -- Compiling entity cyclonev_io_ibuf
+# -- Compiling architecture arch of cyclonev_io_ibuf
+# -- Compiling entity cyclonev_io_obuf
+# -- Compiling architecture arch of cyclonev_io_obuf
+# -- Compiling entity cyclonev_ddio_in
+# -- Compiling architecture arch of cyclonev_ddio_in
+# -- Compiling entity cyclonev_ddio_oe
+# -- Compiling architecture arch of cyclonev_ddio_oe
+# -- Compiling entity cyclonev_ddio_out
+# -- Compiling architecture arch of cyclonev_ddio_out
+# -- Compiling entity cyclonev_io_pad
+# -- Compiling architecture arch of cyclonev_io_pad
+# -- Compiling entity cyclonev_bias_logic
+# -- Compiling architecture vital_bias_logic of cyclonev_bias_logic
+# -- Compiling entity cyclonev_bias_generator
+# -- Compiling architecture vital_bias_generator of cyclonev_bias_generator
+# -- Compiling entity cyclonev_bias_block
+# -- Compiling architecture vital_bias_block of cyclonev_bias_block
+# -- Compiling entity cyclonev_clk_phase_select
+# -- Compiling architecture behavior of cyclonev_clk_phase_select
+# -- Compiling entity cyclonev_clkena
+# -- Compiling architecture behavior of cyclonev_clkena
+# -- Compiling entity cyclonev_clkselect
+# -- Compiling architecture behavior of cyclonev_clkselect
+# -- Compiling entity cyclonev_delay_chain
+# -- Compiling architecture behavior of cyclonev_delay_chain
+# -- Compiling entity cyclonev_dll_offset_ctrl
+# -- Compiling architecture behavior of cyclonev_dll_offset_ctrl
+# -- Compiling entity cyclonev_dll
+# -- Compiling architecture behavior of cyclonev_dll
+# -- Compiling entity cyclonev_dqs_config
+# -- Compiling architecture behavior of cyclonev_dqs_config
+# -- Compiling entity cyclonev_dqs_delay_chain
+# -- Compiling architecture behavior of cyclonev_dqs_delay_chain
+# -- Compiling entity cyclonev_dqs_enable_ctrl
+# -- Compiling architecture behavior of cyclonev_dqs_enable_ctrl
+# -- Compiling entity cyclonev_duty_cycle_adjustment
+# -- Compiling architecture behavior of cyclonev_duty_cycle_adjustment
+# -- Compiling entity cyclonev_fractional_pll
+# -- Compiling architecture behavior of cyclonev_fractional_pll
+# -- Compiling entity cyclonev_half_rate_input
+# -- Compiling architecture behavior of cyclonev_half_rate_input
+# -- Compiling entity cyclonev_input_phase_alignment
+# -- Compiling architecture behavior of cyclonev_input_phase_alignment
+# -- Compiling entity cyclonev_io_clock_divider
+# -- Compiling architecture behavior of cyclonev_io_clock_divider
+# -- Compiling entity cyclonev_io_config
+# -- Compiling architecture behavior of cyclonev_io_config
+# -- Compiling entity cyclonev_leveling_delay_chain
+# -- Compiling architecture behavior of cyclonev_leveling_delay_chain
+# -- Compiling entity cyclonev_mem_phy
+# -- Compiling architecture behavior of cyclonev_mem_phy
+# -- Compiling entity cyclonev_phy_clkbuf
+# -- Compiling architecture behavior of cyclonev_phy_clkbuf
+# -- Compiling entity cyclonev_output_alignment
+# -- Compiling architecture behavior of cyclonev_output_alignment
+# -- Compiling entity cyclonev_pll_dll_output
+# -- Compiling architecture behavior of cyclonev_pll_dll_output
+# -- Compiling entity cyclonev_pll_dpa_output
+# -- Compiling architecture behavior of cyclonev_pll_dpa_output
+# -- Compiling entity cyclonev_pll_extclk_output
+# -- Compiling architecture behavior of cyclonev_pll_extclk_output
+# -- Compiling entity cyclonev_pll_lvds_output
+# -- Compiling architecture behavior of cyclonev_pll_lvds_output
+# -- Compiling entity cyclonev_pll_output_counter
+# -- Compiling architecture behavior of cyclonev_pll_output_counter
+# -- Compiling entity cyclonev_pll_reconfig
+# -- Compiling architecture behavior of cyclonev_pll_reconfig
+# -- Compiling entity cyclonev_pll_refclk_select
+# -- Compiling architecture behavior of cyclonev_pll_refclk_select
+# -- Compiling entity cyclonev_termination_logic
+# -- Compiling architecture behavior of cyclonev_termination_logic
+# -- Compiling entity cyclonev_termination
+# -- Compiling architecture behavior of cyclonev_termination
+# -- Compiling entity cyclonev_asmiblock
+# -- Compiling architecture behavior of cyclonev_asmiblock
+# -- Compiling entity cyclonev_chipidblock
+# -- Compiling architecture behavior of cyclonev_chipidblock
+# -- Compiling entity cyclonev_controller
+# -- Compiling architecture behavior of cyclonev_controller
+# -- Compiling entity cyclonev_crcblock
+# -- Compiling architecture behavior of cyclonev_crcblock
+# -- Compiling entity cyclonev_jtag
+# -- Compiling architecture behavior of cyclonev_jtag
+# -- Compiling entity cyclonev_prblock
+# -- Compiling architecture behavior of cyclonev_prblock
+# -- Compiling entity cyclonev_rublock
+# -- Compiling architecture behavior of cyclonev_rublock
+# -- Compiling entity cyclonev_tsdblock
+# -- Compiling architecture behavior of cyclonev_tsdblock
+# -- Compiling entity cyclonev_read_fifo
+# -- Compiling architecture behavior of cyclonev_read_fifo
+# -- Compiling entity cyclonev_read_fifo_read_enable
+# -- Compiling architecture behavior of cyclonev_read_fifo_read_enable
+# -- Compiling entity cyclonev_mac
+# -- Compiling architecture behavior of cyclonev_mac
+# -- Compiling entity cyclonev_ir_fifo_userdes
+# -- Compiling architecture behavior of cyclonev_ir_fifo_userdes
+# -- Compiling entity cyclonev_oscillator
+# -- Compiling architecture behavior of cyclonev_oscillator
+# End time: 18:47:04 on Jan 25,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:47:04 on Jan 25,2021
+# vcom -work cyclonev -93 c:/intelfpga_lite/20.1/quartus/eda/sim_lib/cyclonev_components.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cyclonev_atom_pack
+# -- Compiling package cyclonev_components
+# End time: 18:47:04 on Jan 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

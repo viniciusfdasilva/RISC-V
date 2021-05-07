@@ -1,0 +1,95 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/simulation/modelsim
+Eadder_8bits
+Z1 w1612953186
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 9
+R0
+Z4 8C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/adder_8bits.vhd
+Z5 FC:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/adder_8bits.vhd
+l0
+L6 1
+VE7CO^ii@6@0E3dOmd6Z@L1
+!s100 U2GeR3CS4S30DQzPH63321
+Z6 OV;C;2020.1;71
+32
+Z7 !s110 1613039318
+!i10b 1
+Z8 !s108 1613039317.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/adder_8bits.vhd|
+Z10 !s107 C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/adder_8bits.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Aadder_8bits
+R2
+R3
+DEx4 work 11 adder_8bits 0 22 E7CO^ii@6@0E3dOmd6Z@L1
+!i122 9
+l25
+L14 84
+V3B;9WIieGjV1jJI]Jjn=21
+!s100 =YOoQE5Z=L=3IY^O;QKFX1
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eadder_8bits_vhd_tst
+Z13 w1613039975
+Z14 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R2
+R3
+!i122 12
+R0
+Z15 8C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/simulation/modelsim/adder_8bits_test.vhd
+Z16 FC:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/simulation/modelsim/adder_8bits_test.vhd
+l0
+L32 1
+VOTD;64dROzCV@J0ffRJbO0
+!s100 o_F^4Xz`jTX8=9;ahzb^G2
+R6
+32
+Z17 !s110 1613040060
+!i10b 1
+Z18 !s108 1613040060.000000
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/simulation/modelsim/adder_8bits_test.vhd|
+Z20 !s107 C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_portMap/simulation/modelsim/adder_8bits_test.vhd|
+!i113 1
+R11
+R12
+Aadder_8bits_arch
+R14
+R2
+R3
+Z21 DEx4 work 19 adder_8bits_vhd_tst 0 22 OTD;64dROzCV@J0ffRJbO0
+!i122 12
+l47
+Z22 L34 46
+Z23 V`[IhDURBQU1[o@R^9=6160
+Z24 !s100 Y`Qg:]MAV_U58ahTAL5`K0
+R6
+32
+R17
+!i10b 1
+R18
+R19
+R20
+!i113 1
+R11
+R12

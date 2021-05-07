@@ -1,0 +1,134 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/subtractor_portMap/simulation/modelsim
+Esubtractor_1bit
+Z1 w1613126971
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 1
+R0
+Z4 8C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/subtractor_portMap/subtractor_1bit.vhd
+Z5 FC:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/subtractor_portMap/subtractor_1bit.vhd
+l0
+L4 1
+VjP2>LE_dCK@iC<k5GeX?h0
+!s100 bne7bDZk5i;f0K`oWJX6N1
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1613131182
+!i10b 1
+Z8 !s108 1613131182.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/subtractor_portMap/subtractor_1bit.vhd|
+Z10 !s107 C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/subtractor_portMap/subtractor_1bit.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Asubtractor_1bit
+R2
+R3
+DEx4 work 15 subtractor_1bit 0 22 jP2>LE_dCK@iC<k5GeX?h0
+!i122 1
+l18
+L17 11
+VME_SEKDDM_bWm8zQRFBje3
+!s100 I0lOgK:6LfFRRm>S6mD1k2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Esubtractor_8bits
+Z13 w1613130191
+R2
+R3
+!i122 0
+R0
+Z14 8C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/subtractor_portMap/subtractor_8bits.vhd
+Z15 FC:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/subtractor_portMap/subtractor_8bits.vhd
+l0
+L4 1
+V__Zj[P8:A5T_Pa9^EP8>g0
+!s100 Ag`;^?z>1oRb;<FPoEZ=P3
+R6
+31
+Z16 !s110 1613131181
+!i10b 1
+Z17 !s108 1613131181.000000
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/subtractor_portMap/subtractor_8bits.vhd|
+Z19 !s107 C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/subtractor_portMap/subtractor_8bits.vhd|
+!i113 1
+R11
+R12
+Asubtractor_8bits
+R2
+R3
+DEx4 work 16 subtractor_8bits 0 22 __Zj[P8:A5T_Pa9^EP8>g0
+!i122 0
+l28
+L17 84
+VO?IboAEc5i3kLgKZDJPeI0
+!s100 oLdhVZI[Rj8<Mf:J`keOR1
+R6
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12
+Esubtractor_8bits_vhd_tst
+Z20 w1613130919
+R2
+R3
+!i122 2
+R0
+Z21 8C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/subtractor_portMap/simulation/modelsim/subtractor_8bits.vht
+Z22 FC:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/subtractor_portMap/simulation/modelsim/subtractor_8bits.vht
+l0
+L31 1
+VK@a9C1A`IE62F]VL7A6V51
+!s100 eaC;efG1F=I6H`14^EUEX2
+R6
+31
+R7
+!i10b 1
+R8
+Z23 !s90 -reportprogress|300|-93|-work|work|C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/subtractor_portMap/simulation/modelsim/subtractor_8bits.vht|
+!s107 C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/subtractor_portMap/simulation/modelsim/subtractor_8bits.vht|
+!i113 1
+R11
+R12
+Asubtractor_8bits_arch
+R2
+R3
+DEx4 work 24 subtractor_8bits_vhd_tst 0 22 K@a9C1A`IE62F]VL7A6V51
+!i122 2
+l50
+L33 42
+VE1nn261`aMnEK1Rh1UAEK0
+!s100 M<ogh:h4eAR<UZE@2iQ7[2
+R6
+31
+R7
+!i10b 1
+R8
+R23
+Z24 !s107 C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/subtractor_portMap/simulation/modelsim/subtractor_8bits.vht|
+!i113 1
+R11
+R12

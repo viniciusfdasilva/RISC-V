@@ -1,0 +1,12 @@
+|and_gate
+a => q.IN0
+a => q.IN0
+a => q.IN0
+a => q.IN0
+b => q.IN1
+b => q.IN1
+b => q.IN1
+b => q.IN1
+q <= q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,134 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/and_generic/simulation/modelsim
+Eand_1bit
+Z1 w1616065073
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 3
+R0
+Z4 8C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/and_generic/and_1bit.vhd
+Z5 FC:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/and_generic/and_1bit.vhd
+l0
+L4 1
+Vk2D2LCoBc23H8XJ`iFgR:1
+!s100 R777[<^?A=`nMf2WMO=4g3
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1616101897
+!i10b 1
+Z8 !s108 1616101897.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/and_generic/and_1bit.vhd|
+Z10 !s107 C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/and_generic/and_1bit.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Aand_1bit
+R2
+R3
+DEx4 work 8 and_1bit 0 22 k2D2LCoBc23H8XJ`iFgR:1
+!i122 3
+l16
+L15 4
+VimNJ`=35@DYB9oKQY8Bg40
+!s100 lb?nj^EEAj_1B8A2RH9<80
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eand_generic
+Z13 w1616101727
+R2
+R3
+!i122 4
+R0
+Z14 8C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/and_generic/and_generic.vhd
+Z15 FC:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/and_generic/and_generic.vhd
+l0
+L4 1
+VzDm>AQ<eGladQ[nU;K?iV2
+!s100 740@605a4`_?S_TMbmWk31
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/and_generic/and_generic.vhd|
+Z17 !s107 C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/and_generic/and_generic.vhd|
+!i113 1
+R11
+R12
+Aand_generic
+R2
+R3
+DEx4 work 11 and_generic 0 22 zDm>AQ<eGladQ[nU;K?iV2
+!i122 4
+l25
+L16 19
+V4>=VDK?mB<RfKAkmL_=Z:1
+!s100 g7[Jo`ig9^ZUQLR5I`VJb2
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Eand_generic_vhd_tst
+Z18 w1616101808
+R2
+R3
+!i122 5
+R0
+Z19 8C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/and_generic/simulation/modelsim/and_generic.vht
+Z20 FC:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/and_generic/simulation/modelsim/and_generic.vht
+l0
+L31 1
+VFOB2m7=h2noU:<=f<zbT23
+!s100 Ab4T9_RG:f`NgP1`2:o1<3
+R6
+31
+R7
+!i10b 1
+R8
+Z21 !s90 -reportprogress|300|-93|-work|work|C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/and_generic/simulation/modelsim/and_generic.vht|
+Z22 !s107 C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/and_generic/simulation/modelsim/and_generic.vht|
+!i113 1
+R11
+R12
+Aand_generic_arch
+R2
+R3
+Z23 DEx4 work 19 and_generic_vhd_tst 0 22 FOB2m7=h2noU:<=f<zbT23
+!i122 5
+l46
+Z24 L33 36
+Z25 VIZQ2WLBV934egB?b4`[[^0
+Z26 !s100 dCJBZjdhFzDeQ@V8G7=KV0
+R6
+31
+R7
+!i10b 1
+R8
+R21
+R22
+!i113 1
+R11
+R12

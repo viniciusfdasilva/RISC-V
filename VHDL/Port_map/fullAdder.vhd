@@ -1,0 +1,1 @@
+-- Criando um somador de quatro bits com quatro somadores de um bit usando port map

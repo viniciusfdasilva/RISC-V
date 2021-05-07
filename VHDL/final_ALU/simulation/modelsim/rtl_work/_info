@@ -1,0 +1,52 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/final_ALU/simulation/modelsim
+Ealu
+Z1 w1612780969
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R0
+Z4 8C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/final_ALU/alu.vhd
+Z5 FC:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/final_ALU/alu.vhd
+l0
+L4 1
+VC_E3]K[f1_]jlcA45=g500
+!s100 ZjPGC:Fl?5LGmPA49W=cJ0
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1612952237
+!i10b 1
+Z8 !s108 1612952237.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/final_ALU/alu.vhd|
+!s107 C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/final_ALU/alu.vhd|
+!i113 1
+Z10 o-93 -work work
+Z11 tExplicit 1 CvgOpt 0
+Aalu
+R2
+R3
+DEx4 work 3 alu 0 22 C_E3]K[f1_]jlcA45=g500
+!i122 0
+l13
+L12 3
+VV?obe?[8m@lT;TPA;U:5i1
+!s100 GzHOS`QO6ol;VUCEHdS2J1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+Z12 !s107 C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/final_ALU/alu.vhd|
+!i113 1
+R10
+R11

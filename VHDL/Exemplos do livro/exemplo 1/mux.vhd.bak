@@ -1,0 +1,6 @@
+entity mux is
+	port (
+		a, b, c, d : in bit;
+		s0, s1 : in bit;
+		x, : out bit
+	);

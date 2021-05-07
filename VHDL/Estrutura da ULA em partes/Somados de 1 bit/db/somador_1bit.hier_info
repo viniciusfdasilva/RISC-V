@@ -1,0 +1,21 @@
+|somador_1bit
+a => soma.IN0
+a => soma.IN0
+a => soma.IN0
+a => soma.IN0
+b => soma.IN1
+b => soma.IN1
+b => soma.IN1
+b => soma.IN1
+carryIn => soma.IN1
+carryIn => soma.IN1
+carryIn => soma.IN1
+carryIn => soma.IN1
+carryIn => soma.IN1
+carryIn => soma.IN1
+carryIn => soma.IN1
+carryIn => soma.IN1
+soma << soma$latch.DB_MAX_OUTPUT_PORT_TYPE
+carryOut << carryOut$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

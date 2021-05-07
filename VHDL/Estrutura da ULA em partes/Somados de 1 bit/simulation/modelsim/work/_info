@@ -1,0 +1,93 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/Estrutura da ULA em partes/Somados de 1 bit/simulation/modelsim
+Esomador_1bit
+Z1 w1611536492
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 1
+R0
+Z4 8C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/Estrutura da ULA em partes/Somados de 1 bit/somador_1bit.vhd
+Z5 FC:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/Estrutura da ULA em partes/Somados de 1 bit/somador_1bit.vhd
+l0
+L4 1
+V3P2H1R9Y8f@Fb>mcD[U<[3
+!s100 lNDK2n75hho33U`9>@]3h1
+Z6 OV;C;2020.1;71
+32
+Z7 !s110 1611613125
+!i10b 1
+Z8 !s108 1611613125.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/Estrutura da ULA em partes/Somados de 1 bit/somador_1bit.vhd|
+!s107 C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/Estrutura da ULA em partes/Somados de 1 bit/somador_1bit.vhd|
+!i113 1
+Z10 o-work work -2002 -explicit
+Z11 tExplicit 1 CvgOpt 0
+Asomador
+R2
+R3
+DEx4 work 12 somador_1bit 0 22 3P2H1R9Y8f@Fb>mcD[U<[3
+!i122 1
+l12
+L11 20
+Ve5m>Sidcg2M6?G2S=g<hE3
+!s100 =E>B6CalcE>L9X`]Dn[X<2
+R6
+32
+R7
+!i10b 1
+R8
+R9
+Z12 !s107 C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/Estrutura da ULA em partes/Somados de 1 bit/somador_1bit.vhd|
+!i113 1
+R10
+R11
+Esomador_1bit_vhd_tst
+Z13 w1611611239
+R2
+R3
+!i122 0
+R0
+Z14 8C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/Estrutura da ULA em partes/Somados de 1 bit/simulation/modelsim/somador_1bit.vht
+Z15 FC:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/Estrutura da ULA em partes/Somados de 1 bit/simulation/modelsim/somador_1bit.vht
+l0
+L31 1
+V>c_Q?eS8hR;6=VD?MXzQO3
+!s100 F;[NA;8jQW^:nA[;LiIe71
+R6
+32
+Z16 !s110 1611613124
+!i10b 1
+Z17 !s108 1611613124.000000
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/Estrutura da ULA em partes/Somados de 1 bit/simulation/modelsim/somador_1bit.vht|
+Z19 !s107 C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/Estrutura da ULA em partes/Somados de 1 bit/simulation/modelsim/somador_1bit.vht|
+!i113 1
+R10
+R11
+Asomador_1bit_arch
+R2
+R3
+DEx4 work 20 somador_1bit_vhd_tst 0 22 >c_Q?eS8hR;6=VD?MXzQO3
+!i122 0
+l50
+L33 42
+VQ`B7f:XYB<KWU8c^eK9ch2
+!s100 IDC?4CMz0kIc5njMiE1fU0
+R6
+32
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R10
+R11
