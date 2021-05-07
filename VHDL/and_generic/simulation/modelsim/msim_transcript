@@ -1,0 +1,114 @@
+# Reading pref.tcl
+# do and_generic_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/and_generic/and_generic.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:11:26 on Mar 18,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/and_generic/and_generic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity and_generic
+# -- Compiling architecture and_generic of and_generic
+# End time: 18:11:26 on Mar 18,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/and_generic/and_1bit.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:11:27 on Mar 18,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/and_generic/and_1bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity and_1bit
+# -- Compiling architecture and_1bit of and_1bit
+# End time: 18:11:27 on Mar 18,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/and_generic/simulation/modelsim/and_generic.vht}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:11:27 on Mar 18,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/and_generic/simulation/modelsim/and_generic.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity and_generic_vhd_tst
+# -- Compiling architecture and_generic_arch of and_generic_vhd_tst
+# End time: 18:11:27 on Mar 18,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs="+acc"  and_test
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs=""+acc"" and_test 
+# Start time: 18:11:27 on Mar 18,2021
+# ** Error: (vsim-3170) Could not find 'and_test'.
+#         Searched libraries:
+#             C:/intelFPGA/20.1/modelsim_ase/altera/vhdl/altera
+#             C:/intelFPGA/20.1/modelsim_ase/altera/vhdl/220model
+#             C:/intelFPGA/20.1/modelsim_ase/altera/vhdl/sgate
+#             C:/intelFPGA/20.1/modelsim_ase/altera/vhdl/altera_mf
+#             C:/intelFPGA/20.1/modelsim_ase/altera/vhdl/altera_lnsim
+#             C:/intelFPGA/20.1/modelsim_ase/altera/vhdl/cyclonev
+#             C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/and_generic/simulation/modelsim/rtl_work
+#             C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/and_generic/simulation/modelsim/rtl_work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./and_generic_run_msim_rtl_vhdl.do PAUSED at line 13
+vcom -93 -work work C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/and_generic/and_1bit.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:11:37 on Mar 18,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/and_generic/and_1bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity and_1bit
+# -- Compiling architecture and_1bit of and_1bit
+# End time: 18:11:37 on Mar 18,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -93 -work work C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/and_generic/and_generic.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:11:37 on Mar 18,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/and_generic/and_generic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity and_generic
+# -- Compiling architecture and_generic of and_generic
+# End time: 18:11:37 on Mar 18,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -93 -work work C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/and_generic/simulation/modelsim/and_generic.vht
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:11:37 on Mar 18,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/and_generic/simulation/modelsim/and_generic.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity and_generic_vhd_tst
+# -- Compiling architecture and_generic_arch of and_generic_vhd_tst
+# End time: 18:11:37 on Mar 18,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs=\"+acc\" work.and_generic_vhd_tst
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs=""+acc"" work.and_generic_vhd_tst 
+# Start time: 18:11:27 on Mar 18,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.and_generic_vhd_tst(and_generic_arch)
+# Loading work.and_generic(and_generic)
+# Loading work.and_1bit(and_1bit)
+add wave -position end  sim:/and_generic_vhd_tst/a
+add wave -position end  sim:/and_generic_vhd_tst/b
+add wave -position end  sim:/and_generic_vhd_tst/output
+force -freeze sim:/and_generic_vhd_tst/a 00010001 0
+force -freeze sim:/and_generic_vhd_tst/b 00000001 0
+run
+force -freeze sim:/and_generic_vhd_tst/b 00010001 0
+run

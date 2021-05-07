@@ -1,0 +1,139 @@
+|adder_8bits
+input1[0] => adder_1bit:Out0.input1
+input1[1] => adder_1bit:Out1.input1
+input1[2] => adder_1bit:Out2.input1
+input1[3] => adder_1bit:Out3.input1
+input1[4] => adder_1bit:Out4.input1
+input1[5] => adder_1bit:Out5.input1
+input1[6] => adder_1bit:Out6.input1
+input1[7] => adder_1bit:Out7.input1
+input2[0] => adder_1bit:Out0.input2
+input2[1] => adder_1bit:Out1.input2
+input2[2] => adder_1bit:Out2.input2
+input2[3] => adder_1bit:Out3.input2
+input2[4] => adder_1bit:Out4.input2
+input2[5] => adder_1bit:Out5.input2
+input2[6] => adder_1bit:Out6.input2
+input2[7] => adder_1bit:Out7.input2
+output[0] << adder_1bit:Out0.sum
+output[1] << adder_1bit:Out1.sum
+output[2] << adder_1bit:Out2.sum
+output[3] << adder_1bit:Out3.sum
+output[4] << adder_1bit:Out4.sum
+output[5] << adder_1bit:Out5.sum
+output[6] << adder_1bit:Out6.sum
+output[7] << adder_1bit:Out7.sum
+
+
+|adder_8bits|adder_1bit:Out0
+input1 => sum.IN0
+input1 => carryOut.IN0
+input1 => carryOut.IN0
+input2 => sum.IN1
+input2 => carryOut.IN1
+input2 => carryOut.IN0
+carryIn => sum.IN1
+carryIn => carryOut.IN1
+carryIn => carryOut.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_8bits|adder_1bit:Out1
+input1 => sum.IN0
+input1 => carryOut.IN0
+input1 => carryOut.IN0
+input2 => sum.IN1
+input2 => carryOut.IN1
+input2 => carryOut.IN0
+carryIn => sum.IN1
+carryIn => carryOut.IN1
+carryIn => carryOut.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_8bits|adder_1bit:Out2
+input1 => sum.IN0
+input1 => carryOut.IN0
+input1 => carryOut.IN0
+input2 => sum.IN1
+input2 => carryOut.IN1
+input2 => carryOut.IN0
+carryIn => sum.IN1
+carryIn => carryOut.IN1
+carryIn => carryOut.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_8bits|adder_1bit:Out3
+input1 => sum.IN0
+input1 => carryOut.IN0
+input1 => carryOut.IN0
+input2 => sum.IN1
+input2 => carryOut.IN1
+input2 => carryOut.IN0
+carryIn => sum.IN1
+carryIn => carryOut.IN1
+carryIn => carryOut.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_8bits|adder_1bit:Out4
+input1 => sum.IN0
+input1 => carryOut.IN0
+input1 => carryOut.IN0
+input2 => sum.IN1
+input2 => carryOut.IN1
+input2 => carryOut.IN0
+carryIn => sum.IN1
+carryIn => carryOut.IN1
+carryIn => carryOut.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_8bits|adder_1bit:Out5
+input1 => sum.IN0
+input1 => carryOut.IN0
+input1 => carryOut.IN0
+input2 => sum.IN1
+input2 => carryOut.IN1
+input2 => carryOut.IN0
+carryIn => sum.IN1
+carryIn => carryOut.IN1
+carryIn => carryOut.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_8bits|adder_1bit:Out6
+input1 => sum.IN0
+input1 => carryOut.IN0
+input1 => carryOut.IN0
+input2 => sum.IN1
+input2 => carryOut.IN1
+input2 => carryOut.IN0
+carryIn => sum.IN1
+carryIn => carryOut.IN1
+carryIn => carryOut.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_8bits|adder_1bit:Out7
+input1 => sum.IN0
+input1 => carryOut.IN0
+input1 => carryOut.IN0
+input2 => sum.IN1
+input2 => carryOut.IN1
+input2 => carryOut.IN0
+carryIn => sum.IN1
+carryIn => carryOut.IN1
+carryIn => carryOut.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+
+

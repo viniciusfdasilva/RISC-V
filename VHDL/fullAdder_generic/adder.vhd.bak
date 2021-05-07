@@ -1,0 +1,5 @@
+library ieee;
+use std_logic_1164.all;
+
+entity adder is
+...

@@ -1,0 +1,111 @@
+# Reading pref.tcl
+# do somador_1bit_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/Estrutura da ULA em partes/Somados de 1 bit/somador_1bit.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:22:27 on Jan 28,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/Estrutura da ULA em partes/Somados de 1 bit/somador_1bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity somador_1bit
+# -- Compiling architecture somador of somador_1bit
+# End time: 20:22:27 on Jan 28,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/Estrutura da ULA em partes/Somados de 1 bit/simulation/modelsim/somador_1bit.vht}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:22:27 on Jan 28,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/Estrutura da ULA em partes/Somados de 1 bit/simulation/modelsim/somador_1bit.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity somador_1bit_vhd_tst
+# -- Compiling architecture somador_1bit_arch of somador_1bit_vhd_tst
+# End time: 20:22:27 on Jan 28,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs="+acc"  somador_1bit_test
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs=""+acc"" somador_1bit_test 
+# Start time: 20:22:27 on Jan 28,2021
+# ** Error: (vsim-3170) Could not find 'somador_1bit_test'.
+#         Searched libraries:
+#             C:/intelFPGA/20.1/modelsim_ase/altera/vhdl/altera
+#             C:/intelFPGA/20.1/modelsim_ase/altera/vhdl/220model
+#             C:/intelFPGA/20.1/modelsim_ase/altera/vhdl/sgate
+#             C:/intelFPGA/20.1/modelsim_ase/altera/vhdl/altera_mf
+#             C:/intelFPGA/20.1/modelsim_ase/altera/vhdl/altera_lnsim
+#             C:/intelFPGA/20.1/modelsim_ase/altera/vhdl/cyclonev
+#             C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/Estrutura da ULA em partes/Somados de 1 bit/simulation/modelsim/rtl_work
+#             C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/Estrutura da ULA em partes/Somados de 1 bit/simulation/modelsim/rtl_work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./somador_1bit_run_msim_rtl_vhdl.do PAUSED at line 12
+vsim work.somador_1bit_vhd_tst
+# vsim work.somador_1bit_vhd_tst 
+# Start time: 20:22:27 on Jan 28,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.somador_1bit_vhd_tst(somador_1bit_arch)
+# Loading work.somador_1bit(somador)
+add wave -position end  sim:/somador_1bit_vhd_tst/a
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: dayan  Hostname: DAYANE  ProcessID: 1064
+#           Attempting to use alternate WLF file "./wlftj7i1xs".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftj7i1xs
+add wave -position end  sim:/somador_1bit_vhd_tst/b
+add wave -position end  sim:/somador_1bit_vhd_tst/carryIn
+add wave -position end  sim:/somador_1bit_vhd_tst/carryOut
+add wave -position end  sim:/somador_1bit_vhd_tst/soma
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 20:43:10 on Jan 28,2021, Elapsed time: 0:20:43
+# Errors: 1, Warnings: 2

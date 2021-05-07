@@ -1,0 +1,6 @@
+|alu
+inputA => ~NO_FANOUT~
+inputB => ~NO_FANOUT~
+output << comb.DB_MAX_OUTPUT_PORT_TYPE
+
+

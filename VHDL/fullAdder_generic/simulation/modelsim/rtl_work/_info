@@ -1,0 +1,134 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_generic/simulation/modelsim
+Eadder
+Z1 w1616018817
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 3
+R0
+Z4 8C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_generic/adder.vhd
+Z5 FC:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_generic/adder.vhd
+l0
+L4 1
+V=S0E1LKVUgX^zSB=2`9B[2
+!s100 <YIFdWEnb@LzJTaCi71fN3
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1616018884
+!i10b 1
+Z8 !s108 1616018884.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_generic/adder.vhd|
+Z10 !s107 C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_generic/adder.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Aadder
+R2
+R3
+DEx4 work 5 adder 0 22 =S0E1LKVUgX^zSB=2`9B[2
+!i122 3
+l32
+L18 30
+V5>hW0KY9cBagec4PM9mm:3
+!s100 6=mfVJO`i92OeZka`WhBA1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eadder_1bit
+Z13 w1616017614
+R2
+R3
+!i122 4
+R0
+Z14 8C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_generic/adder_1bit.vhd
+Z15 FC:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_generic/adder_1bit.vhd
+l0
+L4 1
+V@kgQnUmj@]DMc0AcF[jI_0
+!s100 GN9=d`o0[B016og1>PL7b2
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_generic/adder_1bit.vhd|
+Z17 !s107 C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_generic/adder_1bit.vhd|
+!i113 1
+R11
+R12
+Aadder_1bit
+R2
+R3
+DEx4 work 10 adder_1bit 0 22 @kgQnUmj@]DMc0AcF[jI_0
+!i122 4
+l18
+L17 5
+VWk_;`WKKY4FGYWkWcY0872
+!s100 N8OWNcLc1iMT[zc@?0?TP0
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Eadder_vhd_tst
+Z18 w1616018850
+R2
+R3
+!i122 5
+R0
+Z19 8C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_generic/simulation/modelsim/adder.vht
+Z20 FC:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_generic/simulation/modelsim/adder.vht
+l0
+L31 1
+V_S[PGj]i`PGdMoeDK]z503
+!s100 JTKT0^?cM;lRZ>d8I6dHY0
+R6
+31
+Z21 !s110 1616018885
+!i10b 1
+R8
+Z22 !s90 -reportprogress|300|-93|-work|work|C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_generic/simulation/modelsim/adder.vht|
+Z23 !s107 C:/Users/dayan/OneDrive/Documentos/RISC-V/VHDL/fullAdder_generic/simulation/modelsim/adder.vht|
+!i113 1
+R11
+R12
+Aadder_arch
+R2
+R3
+Z24 DEx4 work 13 adder_vhd_tst 0 22 _S[PGj]i`PGdMoeDK]z503
+!i122 5
+l50
+Z25 L33 42
+Z26 VHdBPMRo6KJ:P`CCOB^hZc1
+Z27 !s100 o]3QS74j]BmFSf:<cb9]R3
+R6
+31
+R21
+!i10b 1
+R8
+R22
+R23
+!i113 1
+R11
+R12

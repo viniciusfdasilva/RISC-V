@@ -1,0 +1,32 @@
+|ula_8bits
+inputA[0] => ~NO_FANOUT~
+inputA[1] => ~NO_FANOUT~
+inputA[2] => ~NO_FANOUT~
+inputA[3] => ~NO_FANOUT~
+inputA[4] => ~NO_FANOUT~
+inputA[5] => ~NO_FANOUT~
+inputA[6] => ~NO_FANOUT~
+inputA[7] => ~NO_FANOUT~
+inputB[0] => ~NO_FANOUT~
+inputB[1] => ~NO_FANOUT~
+inputB[2] => ~NO_FANOUT~
+inputB[3] => ~NO_FANOUT~
+inputB[4] => ~NO_FANOUT~
+inputB[5] => ~NO_FANOUT~
+inputB[6] => ~NO_FANOUT~
+inputB[7] => ~NO_FANOUT~
+carryIn => ~NO_FANOUT~
+opcode[0] => ~NO_FANOUT~
+opcode[1] => ~NO_FANOUT~
+opcode[2] => ~NO_FANOUT~
+output[0] <= output[0].DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= output[1].DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= output[2].DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= output[3].DB_MAX_OUTPUT_PORT_TYPE
+output[4] <= output[4].DB_MAX_OUTPUT_PORT_TYPE
+output[5] <= output[5].DB_MAX_OUTPUT_PORT_TYPE
+output[6] <= output[6].DB_MAX_OUTPUT_PORT_TYPE
+output[7] <= output[7].DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+

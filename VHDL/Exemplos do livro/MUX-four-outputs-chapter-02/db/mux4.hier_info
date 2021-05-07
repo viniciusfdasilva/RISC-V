@@ -1,0 +1,16 @@
+|mux4
+i0 => Selector0.IN6
+i1 => Selector0.IN7
+i2 => Selector0.IN8
+i3 => Selector0.IN9
+a => sel.IN0
+a => sel.IN0
+a => sel.IN0
+a => sel.IN0
+b => sel.IN1
+b => sel.IN1
+b => sel.IN1
+b => sel.IN1
+q <= Selector0.DB_MAX_OUTPUT_PORT_TYPE
+
+

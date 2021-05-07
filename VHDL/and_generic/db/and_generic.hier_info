@@ -1,0 +1,75 @@
+|and_generic
+a[0] => and_1bit:gen:0:s.a
+a[1] => and_1bit:gen:1:s.a
+a[2] => and_1bit:gen:2:s.a
+a[3] => and_1bit:gen:3:s.a
+a[4] => and_1bit:gen:4:s.a
+a[5] => and_1bit:gen:5:s.a
+a[6] => and_1bit:gen:6:s.a
+a[7] => and_1bit:gen:7:s.a
+b[0] => and_1bit:gen:0:s.b
+b[1] => and_1bit:gen:1:s.b
+b[2] => and_1bit:gen:2:s.b
+b[3] => and_1bit:gen:3:s.b
+b[4] => and_1bit:gen:4:s.b
+b[5] => and_1bit:gen:5:s.b
+b[6] => and_1bit:gen:6:s.b
+b[7] => and_1bit:gen:7:s.b
+output[0] <= and_1bit:gen:0:s.output
+output[1] <= and_1bit:gen:1:s.output
+output[2] <= and_1bit:gen:2:s.output
+output[3] <= and_1bit:gen:3:s.output
+output[4] <= and_1bit:gen:4:s.output
+output[5] <= and_1bit:gen:5:s.output
+output[6] <= and_1bit:gen:6:s.output
+output[7] <= and_1bit:gen:7:s.output
+
+
+|and_generic|and_1bit:\gen:0:s
+a => output.IN0
+b => output.IN1
+output <= output.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|and_generic|and_1bit:\gen:1:s
+a => output.IN0
+b => output.IN1
+output <= output.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|and_generic|and_1bit:\gen:2:s
+a => output.IN0
+b => output.IN1
+output <= output.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|and_generic|and_1bit:\gen:3:s
+a => output.IN0
+b => output.IN1
+output <= output.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|and_generic|and_1bit:\gen:4:s
+a => output.IN0
+b => output.IN1
+output <= output.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|and_generic|and_1bit:\gen:5:s
+a => output.IN0
+b => output.IN1
+output <= output.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|and_generic|and_1bit:\gen:6:s
+a => output.IN0
+b => output.IN1
+output <= output.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|and_generic|and_1bit:\gen:7:s
+a => output.IN0
+b => output.IN1
+output <= output.DB_MAX_OUTPUT_PORT_TYPE
+
+
