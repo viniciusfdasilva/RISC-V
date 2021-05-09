@@ -112,3 +112,5 @@ force -freeze sim:/and_generic_vhd_tst/b 00000001 0
 run
 force -freeze sim:/and_generic_vhd_tst/b 00010001 0
 run
+# End time: 19:30:54 on Mar 18,2021, Elapsed time: 1:19:27
+# Errors: 1, Warnings: 0
